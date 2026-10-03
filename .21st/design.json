@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "project": {
+    "name": "casamelia-quotation",
+    "productType": null,
+    "stack": []
+  },
+  "sources": {
+    "tokens": [],
+    "components": [],
+    "assets": [],
+    "instructions": []
+  },
+  "design": {
+    "colorMode": "unknown",
+    "colors": {},
+    "typography": {},
+    "spacing": {},
+    "radius": {},
+    "shadows": {},
+    "motion": {},
+    "density": "unknown"
+  },
+  "components": {
+    "installed": [],
+    "preferredPrimitives": [],
+    "patterns": []
+  },
+  "constraints": {
+    "must": [],
+    "avoid": []
+  },
+  "decisions": [
+    {
+      "direction": "Preserve Casamelia dark, olive and neutral business palette; add subtle card affordances, compact action groups and a saved-PDF review screen.",
+      "source": "User Version 2 requirements"
+    },
+    {
+      "direction": "One responsive application: phone cards and touch controls, tablet drawer and two-column forms, desktop sidebar/tables; no offline business data.",
+      "source": "User full responsive requirement"
+    }
+  ],
+  "evidence": [],
+  "generatedAt": "2026-09-30T11:15:47.871Z"
+}

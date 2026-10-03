@@ -1,0 +1,364 @@
+A1: ### Interior Quotation Website – Excel Structure & Functional Requirements
+
+The Excel sheet is intended to serve as the **master pricing and specification database** for developing an interior quotation-generation website. The website should use the information provided in the Excel sheet to calculate and generate customer quotations based on **area-wise, wall-wise, and item-wise pricing**.
+
+The system should primarily support **fixed interior works based on the floor plan and room/area requirements** of a residential project.
+
+### 1. Project Flow – Area-Wise Structure
+
+The quotation system should follow the natural flow of a residential floor plan, starting from the **home entrance** and proceeding area by area.
+
+The main areas should include, but not be limited to:
+
+* Verandah / Foyer
+* Living Room
+* Dining Area
+* Kitchen
+* Bedroom 1
+* Bedroom 2
+* Bedroom 3
+* Toilets
+* Other Dry Areas
+* Other Custom Areas
+
+Each area should have its own set of applicable interior items and specifications.
+
+### 2. Living Room
+
+Under the **Living Room**, the system should provide options for the major interior elements, such as:
+
+* TV Unit
+* Crockery Unit
+* Pooja Unit
+* False Ceiling
+* Wall Panelling
+* Other Custom Units
+
+Each item should have the ability to be priced based on the applicable measurement method, such as **sq. ft., running ft., unit, or item-wise pricing**, depending on the specification defined in the Excel sheet.
+
+### 3. Bedrooms
+
+Each bedroom should be listed separately, for example:
+
+* Bedroom 1
+* Bedroom 2
+* Bedroom 3
+
+Within each bedroom, the system should provide options for:
+
+* Wardrobe
+* Loft
+* Wall Panelling
+* Study Table / Workstation
+* Other Custom Furniture / Interior Units
+
+For wardrobes, the quotation system should support different configurations, including:
+
+* Swing Wardrobe
+* Sliding Wardrobe
+* Wardrobe with Loft
+* Other wardrobe configurations as specified in the Excel sheet
+
+The pricing and material specification selected for wardrobes should be taken directly from the corresponding Excel data.
+
+### 4. Reusable Pricing Logic for Dry Areas
+
+The pricing structure defined in the Excel sheet should be **reusable across different interior items in dry areas**.
+
+For example, if a particular material specification and rate is defined for a wardrobe, the same material/rate structure may be applicable to other customized dry-area units such as:
+
+* TV Units
+* Crockery Units
+* Pooja Units
+* Study Tables
+* Workstations
+* Storage Units
+* Other Custom Furniture
+
+The system should allow the team to select the required **material, finish, specification, measurement unit, and applicable rate** for each item.
+
+### 5. Toilets / Wet Areas
+
+After completing each bedroom, the system should provide the corresponding **attached toilet**, wherever applicable. Common toilets should also be available separately.
+
+Wet-area items should follow a **separate specification and pricing structure** from dry-area furniture.
+
+The pricing and specifications for toilets and other wet areas should be taken from the relevant **wet-area / toilet specifications in the Excel sheet**.
+
+### 6. Kitchen
+
+The Kitchen should have its own dedicated category and pricing structure.
+
+Kitchen quotation items should be generated according to the **kitchen specifications, materials, finishes, accessories, and rates provided in the Excel sheet**.
+
+The system should allow the team to select the appropriate kitchen specification and calculate the quotation based on the applicable measurement and rate.
+
+### 7. “Others” / Custom Items
+
+Every major area should include an **“Others”** or **“Custom Item”** option.
+
+This option is required because every project may contain customer-specific requirements that are not available as standard items in the Excel database.
+
+The team should be able to add:
+
+* Item Name
+* Description / Specification
+* Material
+* Finish
+* Measurement Unit
+* Quantity / Area
+* Rate
+* Total Amount
+* Additional Notes
+
+This should allow the quotation team to add project-specific line items without requiring changes to the core system.
+
+### 8. Excel as the Master Pricing Database
+
+The Excel sheet should be treated as the **master reference for material specifications and standard pricing**.
+
+The website should read and organize the Excel data into appropriate categories, such as:
+
+**Area → Item → Type/Configuration → Material → Specification → Unit → Rate**
+
+For example:
+
+**Bedroom → Wardrobe → Sliding → Material/Finish → Sq. Ft. → Rate**
+
+or
+
+**Living Room → TV Unit → Material/Finish → Sq. Ft. → Rate**
+
+The exact structure should follow the information available in the Excel sheet.
+
+### 9. Editable Pricing
+
+Although the standard rates are loaded from the Excel sheet, the quotation team should have the ability to **edit the rate for an individual customer/project**.
+
+For example, if the Excel master rate for an item is ₹X per sq. ft., the team should be able to modify the rate to ₹Y per sq. ft. for a particular customer.
+
+The edited customer-specific rate should affect the quotation calculation for that project without changing the **master rate stored in the Excel database**.
+
+Therefore, the system should maintain two concepts:
+
+1. **Master Rate** – Standard rate imported from the Excel sheet.
+2. **Project/Customer Rate** – Rate that the quotation team can modify for a specific project.
+
+### 10. Automatic Quotation Calculation
+
+Once the team selects the required areas, items, specifications, quantities/measurements, and rates, the system should automatically calculate:
+
+**Quantity / Area × Applicable Rate = Item Total**
+
+The quotation should then provide:
+
+* Area-wise breakdown
+* Item-wise breakdown
+* Material/specification details
+* Quantity / measurement
+* Unit
+* Rate
+* Line-item total
+* Area subtotal
+* Overall project subtotal
+* Additional/custom items
+* Final quotation amount
+
+### 11. Overall Objective
+
+The objective of the system is to create a **structured interior quotation generator** where the quotation team can start from the floor plan, move through each area of the home, select the applicable interior works and specifications, and automatically generate a customer quotation.
+
+The Excel sheet should act as the **master pricing and specification source**, while the website should provide the flexibility to:
+
+* Select standard interior items
+* Select material and finish specifications
+* Apply area-wise, wall-wise, item-wise, sq. ft., running ft., unit, or other applicable pricing
+* Add custom items
+* Modify project-specific rates
+* Automatically calculate line-item and area-wise totals
+* Generate a complete quotation for the customer
+
+The system should be designed so that **new areas, items, materials, specifications, rates, and custom line items can be added in the future without requiring major changes to the website structure**.
+ [cached=### Interior Quotation Website – Excel Structure & Functional Requirements
+
+The Excel sheet is intended to serve as the **master pricing and specification database** for developing an interior quotation-generation website. The website should use the information provided in the Excel sheet to calculate and generate customer quotations based on **area-wise, wall-wise, and item-wise pricing**.
+
+The system should primarily support **fixed interior works based on the floor plan and room/area requirements** of a residential project.
+
+### 1. Project Flow – Area-Wise Structure
+
+The quotation system should follow the natural flow of a residential floor plan, starting from the **home entrance** and proceeding area by area.
+
+The main areas should include, but not be limited to:
+
+* Verandah / Foyer
+* Living Room
+* Dining Area
+* Kitchen
+* Bedroom 1
+* Bedroom 2
+* Bedroom 3
+* Toilets
+* Other Dry Areas
+* Other Custom Areas
+
+Each area should have its own set of applicable interior items and specifications.
+
+### 2. Living Room
+
+Under the **Living Room**, the system should provide options for the major interior elements, such as:
+
+* TV Unit
+* Crockery Unit
+* Pooja Unit
+* False Ceiling
+* Wall Panelling
+* Other Custom Units
+
+Each item should have the ability to be priced based on the applicable measurement method, such as **sq. ft., running ft., unit, or item-wise pricing**, depending on the specification defined in the Excel sheet.
+
+### 3. Bedrooms
+
+Each bedroom should be listed separately, for example:
+
+* Bedroom 1
+* Bedroom 2
+* Bedroom 3
+
+Within each bedroom, the system should provide options for:
+
+* Wardrobe
+* Loft
+* Wall Panelling
+* Study Table / Workstation
+* Other Custom Furniture / Interior Units
+
+For wardrobes, the quotation system should support different configurations, including:
+
+* Swing Wardrobe
+* Sliding Wardrobe
+* Wardrobe with Loft
+* Other wardrobe configurations as specified in the Excel sheet
+
+The pricing and material specification selected for wardrobes should be taken directly from the corresponding Excel data.
+
+### 4. Reusable Pricing Logic for Dry Areas
+
+The pricing structure defined in the Excel sheet should be **reusable across different interior items in dry areas**.
+
+For example, if a particular material specification and rate is defined for a wardrobe, the same material/rate structure may be applicable to other customized dry-area units such as:
+
+* TV Units
+* Crockery Units
+* Pooja Units
+* Study Tables
+* Workstations
+* Storage Units
+* Other Custom Furniture
+
+The system should allow the team to select the required **material, finish, specification, measurement unit, and applicable rate** for each item.
+
+### 5. Toilets / Wet Areas
+
+After completing each bedroom, the system should provide the corresponding **attached toilet**, wherever applicable. Common toilets should also be available separately.
+
+Wet-area items should follow a **separate specification and pricing structure** from dry-area furniture.
+
+The pricing and specifications for toilets and other wet areas should be taken from the relevant **wet-area / toilet specifications in the Excel sheet**.
+
+### 6. Kitchen
+
+The Kitchen should have its own dedicated category and pricing structure.
+
+Kitchen quotation items should be generated according to the **kitchen specifications, materials, finishes, accessories, and rates provided in the Excel sheet**.
+
+The system should allow the team to select the appropriate kitchen specification and calculate the quotation based on the applicable measurement and rate.
+
+### 7. “Others” / Custom Items
+
+Every major area should include an **“Others”** or **“Custom Item”** option.
+
+This option is required because every project may contain customer-specific requirements that are not available as standard items in the Excel database.
+
+The team should be able to add:
+
+* Item Name
+* Description / Specification
+* Material
+* Finish
+* Measurement Unit
+* Quantity / Area
+* Rate
+* Total Amount
+* Additional Notes
+
+This should allow the quotation team to add project-specific line items without requiring changes to the core system.
+
+### 8. Excel as the Master Pricing Database
+
+The Excel sheet should be treated as the **master reference for material specifications and standard pricing**.
+
+The website should read and organize the Excel data into appropriate categories, such as:
+
+**Area → Item → Type/Configuration → Material → Specification → Unit → Rate**
+
+For example:
+
+**Bedroom → Wardrobe → Sliding → Material/Finish → Sq. Ft. → Rate**
+
+or
+
+**Living Room → TV Unit → Material/Finish → Sq. Ft. → Rate**
+
+The exact structure should follow the information available in the Excel sheet.
+
+### 9. Editable Pricing
+
+Although the standard rates are loaded from the Excel sheet, the quotation team should have the ability to **edit the rate for an individual customer/project**.
+
+For example, if the Excel master rate for an item is ₹X per sq. ft., the team should be able to modify the rate to ₹Y per sq. ft. for a particular customer.
+
+The edited customer-specific rate should affect the quotation calculation for that project without changing the **master rate stored in the Excel database**.
+
+Therefore, the system should maintain two concepts:
+
+1. **Master Rate** – Standard rate imported from the Excel sheet.
+2. **Project/Customer Rate** – Rate that the quotation team can modify for a specific project.
+
+### 10. Automatic Quotation Calculation
+
+Once the team selects the required areas, items, specifications, quantities/measurements, and rates, the system should automatically calculate:
+
+**Quantity / Area × Applicable Rate = Item Total**
+
+The quotation should then provide:
+
+* Area-wise breakdown
+* Item-wise breakdown
+* Material/specification details
+* Quantity / measurement
+* Unit
+* Rate
+* Line-item total
+* Area subtotal
+* Overall project subtotal
+* Additional/custom items
+* Final quotation amount
+
+### 11. Overall Objective
+
+The objective of the system is to create a **structured interior quotation generator** where the quotation team can start from the floor plan, move through each area of the home, select the applicable interior works and specifications, and automatically generate a customer quotation.
+
+The Excel sheet should act as the **master pricing and specification source**, while the website should provide the flexibility to:
+
+* Select standard interior items
+* Select material and finish specifications
+* Apply area-wise, wall-wise, item-wise, sq. ft., running ft., unit, or other applicable pricing
+* Add custom items
+* Modify project-specific rates
+* Automatically calculate line-item and area-wise totals
+* Generate a complete quotation for the customer
+
+The system should be designed so that **new areas, items, materials, specifications, rates, and custom line items can be added in the future without requiring major changes to the website structure**.
+]
+T59: lofts separate line item [cached=lofts separate line item]

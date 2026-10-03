@@ -1,0 +1,820 @@
+A1: Item
+B1: Carcass
+C1: Shutter
+D1: Finish
+E1: Price
+F1: Other
+G1: Other Amount (Rs.)
+A2: Base Unit
+B2: BWR Ply
+C2: HDHMR
+D2: Laminate
+E2: =IF(OR($A2="",$B2="",$C2="",$D2=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A2&"|"&$B2&"|"&$C2&"|"&$D2,MASTERFLAT_KEY,0)),"Check Master List"))
+H2: CASAMELIA INTERNATIONAL 
+(Unit of INNOVATIVE FENESTRATION SOLUTIONS)
+No. 19, Workspring, PriCommose Road, Off MG Road, Bangalore-560025
+Factory: No, 10A, Sector2, Phase 1, Bidadi Industrial Area, Bangalore-562109.
+info@casameliainternational.com
+Phone: +91 9632301790
+www.casameliainternational.com
+A3: Wodrobe
+B3: MR Ply
+C3: Aluminum Profile
+D3: Laminate Infill
+E3: =IF(OR($A3="",$B3="",$C3="",$D3=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A3&"|"&$B3&"|"&$C3&"|"&$D3,MASTERFLAT_KEY,0)),"Check Master List"))
+E4: =IF(OR($A4="",$B4="",$C4="",$D4=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A4&"|"&$B4&"|"&$C4&"|"&$D4,MASTERFLAT_KEY,0)),"Check Master List"))
+E5: =IF(OR($A5="",$B5="",$C5="",$D5=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A5&"|"&$B5&"|"&$C5&"|"&$D5,MASTERFLAT_KEY,0)),"Check Master List"))
+E6: =IF(OR($A6="",$B6="",$C6="",$D6=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A6&"|"&$B6&"|"&$C6&"|"&$D6,MASTERFLAT_KEY,0)),"Check Master List"))
+E7: =IF(OR($A7="",$B7="",$C7="",$D7=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A7&"|"&$B7&"|"&$C7&"|"&$D7,MASTERFLAT_KEY,0)),"Check Master List"))
+E8: =IF(OR($A8="",$B8="",$C8="",$D8=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A8&"|"&$B8&"|"&$C8&"|"&$D8,MASTERFLAT_KEY,0)),"Check Master List"))
+H8: CUSTOMER NAME
+K8: ADDRESS
+O8: Project Ref
+P8: DATE
+E9: =IF(OR($A9="",$B9="",$C9="",$D9=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A9&"|"&$B9&"|"&$C9&"|"&$D9,MASTERFLAT_KEY,0)),"Check Master List"))
+H9: Mr.Chetan Kumar
+K9: Kanakapura
+O9: CASA20260801
+P9: =TODAY()
+E10: =IF(OR($A10="",$B10="",$C10="",$D10=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A10&"|"&$B10&"|"&$C10&"|"&$D10,MASTERFLAT_KEY,0)),"Check Master List"))
+E11: =IF(OR($A11="",$B11="",$C11="",$D11=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A11&"|"&$B11&"|"&$C11&"|"&$D11,MASTERFLAT_KEY,0)),"Check Master List"))
+H11: Sl no
+I11: Items
+J11: Description of Work
+K11: Measurement in Ft
+M11: Area in Sft
+N11: Qty
+O11: Rate in Rs.
+P11: Amount in Rs.
+E12: =IF(OR($A12="",$B12="",$C12="",$D12=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A12&"|"&$B12&"|"&$C12&"|"&$D12,MASTERFLAT_KEY,0)),"Check Master List"))
+K12: Width
+L12: Length
+E13: =IF(OR($A13="",$B13="",$C13="",$D13=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A13&"|"&$B13&"|"&$C13&"|"&$D13,MASTERFLAT_KEY,0)),"Check Master List"))
+H13: FOYER AREA
+A14: Base Unit
+B14: BWP Ply
+C14: HDHMR
+D14: Laminate
+E14: =IF(OR($A14="",$B14="",$C14="",$D14=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A14&"|"&$B14&"|"&$C14&"|"&$D14,MASTERFLAT_KEY,0)),"Check Master List"))
+H14: 1
+I14: Base Unit
+J14: =B14&" + "&C14&" + "&D14
+K14: 5.5
+L14: 4
+M14: =IF(AND(ISNUMBER(K14),ISNUMBER(L14)),K14*L14,"")
+N14: 1
+O14: =IF(NOT(ISNUMBER(E14)),"",E14+IF(ISNUMBER(G14),G14,0))
+P14: =IF(OR(NOT(ISNUMBER(M14)),NOT(ISNUMBER(N14)),NOT(ISNUMBER(O14))),"",M14*N14*O14)
+A15: Wall Panel
+B15: HDHMR
+C15: -
+D15: Laminate
+E15: =IF(OR($A15="",$B15="",$C15="",$D15=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A15&"|"&$B15&"|"&$C15&"|"&$D15,MASTERFLAT_KEY,0)),"Check Master List"))
+H15: 2
+I15: Wall Panel 
+J15: HDHMR + Mirror
+K15: 3.3
+L15: 6
+M15: =IF(AND(ISNUMBER(K15),ISNUMBER(L15)),K15*L15,"")
+N15: 1
+O15: =IF(NOT(ISNUMBER(E15)),"",E15+IF(ISNUMBER(G15),G15,0))
+P15: =IF(OR(NOT(ISNUMBER(M15)),NOT(ISNUMBER(N15)),NOT(ISNUMBER(O15))),"",M15*N15*O15)
+E16: =IF(OR($A16="",$B16="",$C16="",$D16=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A16&"|"&$B16&"|"&$C16&"|"&$D16,MASTERFLAT_KEY,0)),"Check Master List"))
+H16: TOTAL
+P16: =IF(COUNT(P14:P15)=0,"",SUM(P14:P15))
+E17: =IF(OR($A17="",$B17="",$C17="",$D17=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A17&"|"&$B17&"|"&$C17&"|"&$D17,MASTERFLAT_KEY,0)),"Check Master List"))
+H17: Multi Purpose Hall
+A18: Wall Panel
+B18: HDHMR
+C18: -
+D18: French Mould + PU
+E18: =IF(OR($A18="",$B18="",$C18="",$D18=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A18&"|"&$B18&"|"&$C18&"|"&$D18,MASTERFLAT_KEY,0)),"Check Master List"))
+H18: 4
+I18: Wall Panel 
+J18: =B18&"  + "&D18
+K18: Rft
+M18: 86.2
+N18: 1
+O18: =IF(NOT(ISNUMBER(E18)),"",E18+IF(ISNUMBER(G18),G18,0))
+P18: =IF(OR(NOT(ISNUMBER(M18)),NOT(ISNUMBER(N18)),NOT(ISNUMBER(O18))),"",M18*N18*O18)
+A19: Wall Panel
+B19: With LED MIRROR
+C19: -
+D19: FOR DRESSER UNIT
+E19: =IF(OR($A19="",$B19="",$C19="",$D19=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A19&"|"&$B19&"|"&$C19&"|"&$D19,MASTERFLAT_KEY,0)),"Check Master List"))
+H19: 5
+J19: =B19&"  + "&D19
+K19: 4.7
+L19: 10
+M19: =IF(AND(ISNUMBER(K19),ISNUMBER(L19)),K19*L19,"")
+N19: 1
+O19: =IF(NOT(ISNUMBER(E19)),"",E19+IF(ISNUMBER(G19),G19,0))
+P19: =IF(OR(NOT(ISNUMBER(M19)),NOT(ISNUMBER(N19)),NOT(ISNUMBER(O19))),"",M19*N19*O19)
+A20: Wall Panel
+B20: HDHMR
+C20: -
+D20: CNC, ART Work with PU
+E20: =IF(OR($A20="",$B20="",$C20="",$D20=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A20&"|"&$B20&"|"&$C20&"|"&$D20,MASTERFLAT_KEY,0)),"Check Master List"))
+H20: 6
+J20: =B20&"  + "&D20
+K20: 6
+L20: 10
+M20: =IF(AND(ISNUMBER(K20),ISNUMBER(L20)),K20*L20,"")
+N20: 1
+O20: =IF(NOT(ISNUMBER(E20)),"",E20+IF(ISNUMBER(G20),G20,0))
+P20: =IF(OR(NOT(ISNUMBER(M20)),NOT(ISNUMBER(N20)),NOT(ISNUMBER(O20))),"",M20*N20*O20)
+A21: Wall Panel
+B21: HDHMR
+C21: -
+D21: Veneer + Laminate
+E21: =IF(OR($A21="",$B21="",$C21="",$D21=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A21&"|"&$B21&"|"&$C21&"|"&$D21,MASTERFLAT_KEY,0)),"Check Master List"))
+H21: 7
+I21: Staircase - Wall Panel
+J21: =B21&"  + "&D21
+K21: 14.7
+L21: 30
+M21: =IF(AND(ISNUMBER(K21),ISNUMBER(L21)),K21*L21,"")
+N21: 1
+O21: =IF(NOT(ISNUMBER(E21)),"",E21+IF(ISNUMBER(G21),G21,0))
+P21: =IF(OR(NOT(ISNUMBER(M21)),NOT(ISNUMBER(N21)),NOT(ISNUMBER(O21))),"",M21*N21*O21)
+E22: =IF(OR($A22="",$B22="",$C22="",$D22=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A22&"|"&$B22&"|"&$C22&"|"&$D22,MASTERFLAT_KEY,0)),"Check Master List"))
+H22: TOTAL
+P22: =IF(COUNT(P18:P21)=0,"",SUM(P18:P21))
+E23: =IF(OR($A23="",$B23="",$C23="",$D23=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A23&"|"&$B23&"|"&$C23&"|"&$D23,MASTERFLAT_KEY,0)),"Check Master List"))
+H23: Bedroom 1 (GBR)
+A24: Wodrobe
+B24: MR Ply
+C24: HDHMR
+D24: Laminate SUEDO FINISH
+E24: =IF(OR($A24="",$B24="",$C24="",$D24=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A24&"|"&$B24&"|"&$C24&"|"&$D24,MASTERFLAT_KEY,0)),"Check Master List"))
+H24: 8
+I24: Wodrobe 1
+J24: =B24&" + "&C24&" + "&D24
+K24: 12.3
+L24: 7
+M24: =IF(AND(ISNUMBER(K24),ISNUMBER(L24)),K24*L24,"")
+N24: 1
+O24: =IF(NOT(ISNUMBER(E24)),"",E24+IF(ISNUMBER(G24),G24,0))
+P24: =IF(OR(NOT(ISNUMBER(M24)),NOT(ISNUMBER(N24)),NOT(ISNUMBER(O24))),"",M24*N24*O24)
+A25: Loft
+B25: MR Ply
+C25: HDHMR
+D25: Laminate SUEDO FINISH
+E25: =IF(OR($A25="",$B25="",$C25="",$D25=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A25&"|"&$B25&"|"&$C25&"|"&$D25,MASTERFLAT_KEY,0)),"Check Master List"))
+H25: 9
+I25: Lofts
+J25: =B25&" + "&C25&" + "&D25
+K25: 12.3
+L25: 3
+M25: =IF(AND(ISNUMBER(K25),ISNUMBER(L25)),K25*L25,"")
+N25: 1
+O25: =IF(NOT(ISNUMBER(E25)),"",E25+IF(ISNUMBER(G25),G25,0))
+P25: =IF(OR(NOT(ISNUMBER(M25)),NOT(ISNUMBER(N25)),NOT(ISNUMBER(O25))),"",M25*N25*O25)
+A26: Dressing
+B26: Cabinet With Glass Countertop
+C26: -
+D26: -
+E26: =IF(OR($A26="",$B26="",$C26="",$D26=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A26&"|"&$B26&"|"&$C26&"|"&$D26,MASTERFLAT_KEY,0)),"Check Master List"))
+H26: 10
+I26: Dressing Mirror
+J26: =B26&""
+K26: 2
+L26: 7
+M26: =IF(AND(ISNUMBER(K26),ISNUMBER(L26)),K26*L26,"")
+N26: 1
+O26: =IF(NOT(ISNUMBER(E26)),"",E26+IF(ISNUMBER(G26),G26,0))
+P26: =IF(OR(NOT(ISNUMBER(M26)),NOT(ISNUMBER(N26)),NOT(ISNUMBER(O26))),"",M26*N26*O26)
+E27: =IF(OR($A27="",$B27="",$C27="",$D27=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A27&"|"&$B27&"|"&$C27&"|"&$D27,MASTERFLAT_KEY,0)),"Check Master List"))
+H27: TOTAL
+P27: =IF(COUNT(P24:P26)=0,"",SUM(P24:P26))
+E28: =IF(OR($A28="",$B28="",$C28="",$D28=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A28&"|"&$B28&"|"&$C28&"|"&$D28,MASTERFLAT_KEY,0)),"Check Master List"))
+H28: First Floor - Dining Area
+A29: Wall Panel
+B29: HDHMR
+C29: -
+D29: CNC, ART Work with PU
+E29: =IF(OR($A29="",$B29="",$C29="",$D29=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A29&"|"&$B29&"|"&$C29&"|"&$D29,MASTERFLAT_KEY,0)),"Check Master List"))
+H29: 11
+I29: Wall Panel 
+J29: =B29&" + "&D29
+K29: 18.2
+L29: 10
+M29: =IF(AND(ISNUMBER(K29),ISNUMBER(L29)),K29*L29,"")
+N29: 1
+O29: =IF(NOT(ISNUMBER(E29)),"",E29+IF(ISNUMBER(G29),G29,0))
+P29: =IF(OR(NOT(ISNUMBER(M29)),NOT(ISNUMBER(N29)),NOT(ISNUMBER(O29))),"",M29*N29*O29)
+A30: Wodrobe
+B30: MR Ply
+C30: Aluminum Profile
+D30: Tinted Glass
+E30: =IF(OR($A30="",$B30="",$C30="",$D30=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A30&"|"&$B30&"|"&$C30&"|"&$D30,MASTERFLAT_KEY,0)),"Check Master List"))
+H30: 12
+I30: Pooja unit
+J30: =B30&" + "&C30&" + "&D30
+K30: 4
+L30: 7
+M30: =IF(AND(ISNUMBER(K30),ISNUMBER(L30)),K30*L30,"")
+N30: 1
+O30: =IF(NOT(ISNUMBER(E30)),"",E30+IF(ISNUMBER(G30),G30,0))
+P30: =IF(OR(NOT(ISNUMBER(M30)),NOT(ISNUMBER(N30)),NOT(ISNUMBER(O30))),"",M30*N30*O30)
+A31: Wodrobe
+B31: MR Ply
+C31: HDHMR
+D31: Laminate SUEDO FINISH
+E31: =IF(OR($A31="",$B31="",$C31="",$D31=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A31&"|"&$B31&"|"&$C31&"|"&$D31,MASTERFLAT_KEY,0)),"Check Master List"))
+F31: Seating Cushion
+G31: 1210
+H31: 13
+I31: Bay Window - Seating
+J31: =B31&" + "&C31&" + "&D31&" + "&F31
+K31: 7.9
+L31: 1.5
+M31: =IF(AND(ISNUMBER(K31),ISNUMBER(L31)),K31*L31,"")
+N31: 1
+O31: =IF(NOT(ISNUMBER(E31)),"",E31+IF(ISNUMBER(G31),G31,0))
+P31: =IF(OR(NOT(ISNUMBER(M31)),NOT(ISNUMBER(N31)),NOT(ISNUMBER(O31))),"",M31*N31*O31)
+A32: Wodrobe
+B32: MR Ply
+C32: HDHMR
+D32: Laminate SUEDO FINISH
+E32: =IF(OR($A32="",$B32="",$C32="",$D32=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A32&"|"&$B32&"|"&$C32&"|"&$D32,MASTERFLAT_KEY,0)),"Check Master List"))
+H32: 14
+J32: =B32&" + "&C32&" + "&D32
+K32: =7+K31
+L32: 2
+M32: =IF(AND(ISNUMBER(K32),ISNUMBER(L32)),K32*L32,"")
+N32: 1
+O32: =IF(NOT(ISNUMBER(E32)),"",E32+IF(ISNUMBER(G32),G32,0))
+P32: =IF(OR(NOT(ISNUMBER(M32)),NOT(ISNUMBER(N32)),NOT(ISNUMBER(O32))),"",M32*N32*O32)
+A33: Wodrobe
+B33: MR Ply
+C33: HDHMR
+D33: Laminate SUEDO FINISH
+E33: =IF(OR($A33="",$B33="",$C33="",$D33=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A33&"|"&$B33&"|"&$C33&"|"&$D33,MASTERFLAT_KEY,0)),"Check Master List"))
+H33: 15
+I33: Store Room
+J33: =B33&" + "&C33&" + "&D33
+K33: 8
+L33: 10
+M33: =IF(AND(ISNUMBER(K33),ISNUMBER(L33)),K33*L33,"")
+N33: 1
+O33: =IF(NOT(ISNUMBER(E33)),"",E33+IF(ISNUMBER(G33),G33,0))
+P33: =IF(OR(NOT(ISNUMBER(M33)),NOT(ISNUMBER(N33)),NOT(ISNUMBER(O33))),"",M33*N33*O33)
+E34: =IF(OR($A34="",$B34="",$C34="",$D34=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A34&"|"&$B34&"|"&$C34&"|"&$D34,MASTERFLAT_KEY,0)),"Check Master List"))
+H34: TOTAL
+P34: =IF(COUNT(P29:P33)=0,"",SUM(P29:P33))
+E35: =IF(OR($A35="",$B35="",$C35="",$D35=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A35&"|"&$B35&"|"&$C35&"|"&$D35,MASTERFLAT_KEY,0)),"Check Master List"))
+H35: Bedroom 2
+E36: =IF(OR($A36="",$B36="",$C36="",$D36=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A36&"|"&$B36&"|"&$C36&"|"&$D36,MASTERFLAT_KEY,0)),"Check Master List"))
+H36: 16
+I36: Cot bed
+J36: Customized bed with cushioning
+K36: 7
+L36: 7
+M36: =IF(AND(ISNUMBER(K36),ISNUMBER(L36)),K36*L36,"")
+N36: 1
+O36: =IF(ISNUMBER(E36),E36+IF(ISNUMBER(G36),G36,0),1050)
+P36: =IF(OR(NOT(ISNUMBER(M36)),NOT(ISNUMBER(N36)),NOT(ISNUMBER(O36))),"",M36*N36*O36)
+A37: Bedroom - Furnishing
+B37: HEAD BOARD CUSHION
+C37: -
+D37: Dedecor Material
+E37: =IF(OR($A37="",$B37="",$C37="",$D37=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A37&"|"&$B37&"|"&$C37&"|"&$D37,MASTERFLAT_KEY,0)),"Check Master List"))
+H37: 17
+I37: Headboard
+J37: =B37&" + "&C37&" + "&D37
+K37: 7
+L37: 2
+M37: =IF(AND(ISNUMBER(K37),ISNUMBER(L37)),K37*L37,"")
+N37: 1
+O37: =IF(NOT(ISNUMBER(E37)),"",E37+IF(ISNUMBER(G37),G37,0))
+P37: =IF(OR(NOT(ISNUMBER(M37)),NOT(ISNUMBER(N37)),NOT(ISNUMBER(O37))),"",M37*N37*O37)
+A38: Bedside Table
+B38: Laminate Finish
+C38: -
+D38: -
+E38: =IF(OR($A38="",$B38="",$C38="",$D38=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A38&"|"&$B38&"|"&$C38&"|"&$D38,MASTERFLAT_KEY,0)),"Check Master List"))
+H38: 18
+I38: Bed side table
+J38: =B38&""
+K38: 1.5
+L38: 1.5
+M38: =IF(AND(ISNUMBER(K38),ISNUMBER(L38)),K38*L38,"")
+N38: 2
+O38: =IF(NOT(ISNUMBER(E38)),"",E38+IF(ISNUMBER(G38),G38,0))
+P38: =IF(OR(NOT(ISNUMBER(M38)),NOT(ISNUMBER(N38)),NOT(ISNUMBER(O38))),"",M38*N38*O38)
+A39: wodrobe
+B39: MR Ply
+C39: HDHMR
+D39: Laminate SUEDO FINISH
+E39: =IF(OR($A39="",$B39="",$C39="",$D39=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A39&"|"&$B39&"|"&$C39&"|"&$D39,MASTERFLAT_KEY,0)),"Check Master List"))
+H39: 19
+I39: L - Swing Wardrobe
+J39: =B39&" + "&C39&" + "&D39
+K39: =3.3+8
+L39: 7
+M39: =IF(AND(ISNUMBER(K39),ISNUMBER(L39)),K39*L39,"")
+N39: 1
+O39: =IF(NOT(ISNUMBER(E39)),"",E39+IF(ISNUMBER(G39),G39,0))
+P39: =IF(OR(NOT(ISNUMBER(M39)),NOT(ISNUMBER(N39)),NOT(ISNUMBER(O39))),"",M39*N39*O39)
+A40: Loft
+B40: MR Ply
+C40: HDHMR
+D40: Laminate SUEDO FINISH
+E40: =IF(OR($A40="",$B40="",$C40="",$D40=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A40&"|"&$B40&"|"&$C40&"|"&$D40,MASTERFLAT_KEY,0)),"Check Master List"))
+H40: 20
+I40: Lofts
+J40: =B40&" + "&C40&" + "&D40
+K40: =3.3+8
+L40: 3
+M40: =IF(AND(ISNUMBER(K40),ISNUMBER(L40)),K40*L40,"")
+N40: 1
+O40: =IF(NOT(ISNUMBER(E40)),"",E40+IF(ISNUMBER(G40),G40,0))
+P40: =IF(OR(NOT(ISNUMBER(M40)),NOT(ISNUMBER(N40)),NOT(ISNUMBER(O40))),"",M40*N40*O40)
+A41: Dressing
+B41: Cabinet With Glass Countertop
+C41: -
+D41: -
+E41: =IF(OR($A41="",$B41="",$C41="",$D41=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A41&"|"&$B41&"|"&$C41&"|"&$D41,MASTERFLAT_KEY,0)),"Check Master List"))
+H41: 21
+I41: Dressing Mirror
+J41: =B41&" + "&C41&" + "&D41
+K41: 2
+L41: 7
+M41: =IF(AND(ISNUMBER(K41),ISNUMBER(L41)),K41*L41,"")
+N41: 1
+O41: =IF(NOT(ISNUMBER(E41)),"",E41+IF(ISNUMBER(G41),G41,0))
+P41: =IF(OR(NOT(ISNUMBER(M41)),NOT(ISNUMBER(N41)),NOT(ISNUMBER(O41))),"",M41*N41*O41)
+E42: =IF(OR($A42="",$B42="",$C42="",$D42=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A42&"|"&$B42&"|"&$C42&"|"&$D42,MASTERFLAT_KEY,0)),"Check Master List"))
+H42: TOTAL
+P42: =IF(COUNT(P36:P41)=0,"",SUM(P36:P41))
+E43: =IF(OR($A43="",$B43="",$C43="",$D43=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A43&"|"&$B43&"|"&$C43&"|"&$D43,MASTERFLAT_KEY,0)),"Check Master List"))
+H43: 2nd Floor - Study Room
+A44: Wodrobe
+B44: MR Ply
+C44: HDHMR
+D44: Laminate SUEDO FINISH
+E44: =IF(OR($A44="",$B44="",$C44="",$D44=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A44&"|"&$B44&"|"&$C44&"|"&$D44,MASTERFLAT_KEY,0)),"Check Master List"))
+H44: 22
+I44: Study Space
+J44: =B44&" + "&C44&" + "&D44
+K44: 11.5
+L44: 2.5
+M44: =IF(AND(ISNUMBER(K44),ISNUMBER(L44)),K44*L44,"")
+N44: 1
+O44: =IF(NOT(ISNUMBER(E44)),"",E44+IF(ISNUMBER(G44),G44,0))
+P44: =IF(OR(NOT(ISNUMBER(M44)),NOT(ISNUMBER(N44)),NOT(ISNUMBER(O44))),"",M44*N44*O44)
+A45: Wall Panel
+B45: HDHMR
+C45: -
+D45: Laminate
+E45: =IF(OR($A45="",$B45="",$C45="",$D45=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A45&"|"&$B45&"|"&$C45&"|"&$D45,MASTERFLAT_KEY,0)),"Check Master List"))
+H45: 23
+I45: Study - Back Panel
+J45: =B45&" +"&D45
+K45: 11.5
+L45: 3.5
+M45: =IF(AND(ISNUMBER(K45),ISNUMBER(L45)),K45*L45,"")
+N45: 1
+O45: =IF(NOT(ISNUMBER(E45)),"",E45+IF(ISNUMBER(G45),G45,0))
+P45: =IF(OR(NOT(ISNUMBER(M45)),NOT(ISNUMBER(N45)),NOT(ISNUMBER(O45))),"",M45*N45*O45)
+A46: Wodrobe
+B46: MR Ply
+C46: HDHMR
+D46: Laminate SUEDO FINISH
+E46: =IF(OR($A46="",$B46="",$C46="",$D46=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A46&"|"&$B46&"|"&$C46&"|"&$D46,MASTERFLAT_KEY,0)),"Check Master List"))
+H46: 24
+I46: Wall Unit
+J46: =B46&" + "&C46&" + "&D46
+K46: 11.5
+L46: 1
+M46: =IF(AND(ISNUMBER(K46),ISNUMBER(L46)),K46*L46,"")
+N46: 1
+O46: =IF(NOT(ISNUMBER(E46)),"",E46+IF(ISNUMBER(G46),G46,0))
+P46: =IF(OR(NOT(ISNUMBER(M46)),NOT(ISNUMBER(N46)),NOT(ISNUMBER(O46))),"",M46*N46*O46)
+E47: =IF(OR($A47="",$B47="",$C47="",$D47=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A47&"|"&$B47&"|"&$C47&"|"&$D47,MASTERFLAT_KEY,0)),"Check Master List"))
+H47: TOTAL
+P47: =IF(COUNT(P44:P46)=0,"",SUM(P44:P46))
+E48: =IF(OR($A48="",$B48="",$C48="",$D48=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A48&"|"&$B48&"|"&$C48&"|"&$D48,MASTERFLAT_KEY,0)),"Check Master List"))
+H48: Kids Bedroom
+E49: =IF(OR($A49="",$B49="",$C49="",$D49=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A49&"|"&$B49&"|"&$C49&"|"&$D49,MASTERFLAT_KEY,0)),"Check Master List"))
+H49: 25
+I49: Swing Wardrobe
+J49: =B49&" + "&C49&" + "&D49
+K49: 8
+L49: 7
+M49: =IF(AND(ISNUMBER(K49),ISNUMBER(L49)),K49*L49,"")
+N49: 1
+O49: =IF(NOT(ISNUMBER(E49)),"",E49+IF(ISNUMBER(G49),G49,0))
+P49: =IF(OR(NOT(ISNUMBER(M49)),NOT(ISNUMBER(N49)),NOT(ISNUMBER(O49))),"",M49*N49*O49)
+E50: =IF(OR($A50="",$B50="",$C50="",$D50=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A50&"|"&$B50&"|"&$C50&"|"&$D50,MASTERFLAT_KEY,0)),"Check Master List"))
+H50: 26
+I50: Lofts
+J50: =B50&" + "&C50&" + "&D50
+K50: 8
+L50: 3
+M50: =IF(AND(ISNUMBER(K50),ISNUMBER(L50)),K50*L50,"")
+N50: 1
+O50: =IF(NOT(ISNUMBER(E50)),"",E50+IF(ISNUMBER(G50),G50,0))
+P50: =IF(OR(NOT(ISNUMBER(M50)),NOT(ISNUMBER(N50)),NOT(ISNUMBER(O50))),"",M50*N50*O50)
+E51: =IF(OR($A51="",$B51="",$C51="",$D51=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A51&"|"&$B51&"|"&$C51&"|"&$D51,MASTERFLAT_KEY,0)),"Check Master List"))
+H51: 27
+I51: Cot bed
+J51: =B51&" + "&C51&" + "&D51
+K51: 7
+L51: 7
+M51: =IF(AND(ISNUMBER(K51),ISNUMBER(L51)),K51*L51,"")
+N51: 1
+O51: =IF(NOT(ISNUMBER(E51)),"",E51+IF(ISNUMBER(G51),G51,0))
+P51: =IF(OR(NOT(ISNUMBER(M51)),NOT(ISNUMBER(N51)),NOT(ISNUMBER(O51))),"",M51*N51*O51)
+E52: =IF(OR($A52="",$B52="",$C52="",$D52=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A52&"|"&$B52&"|"&$C52&"|"&$D52,MASTERFLAT_KEY,0)),"Check Master List"))
+H52: 28
+I52: Headboard
+J52: =B52&" + "&C52&" + "&D52
+K52: 7
+L52: 2
+M52: =IF(AND(ISNUMBER(K52),ISNUMBER(L52)),K52*L52,"")
+N52: 1
+O52: =IF(NOT(ISNUMBER(E52)),"",E52+IF(ISNUMBER(G52),G52,0))
+P52: =IF(OR(NOT(ISNUMBER(M52)),NOT(ISNUMBER(N52)),NOT(ISNUMBER(O52))),"",M52*N52*O52)
+E53: =IF(OR($A53="",$B53="",$C53="",$D53=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A53&"|"&$B53&"|"&$C53&"|"&$D53,MASTERFLAT_KEY,0)),"Check Master List"))
+H53: 29
+I53: Bed side table
+J53: =B53&" + "&C53&" + "&D53
+K53: 1.5
+L53: 1.5
+M53: =IF(AND(ISNUMBER(K53),ISNUMBER(L53)),K53*L53,"")
+N53: 2
+O53: =IF(NOT(ISNUMBER(E53)),"",E53+IF(ISNUMBER(G53),G53,0))
+P53: =IF(OR(NOT(ISNUMBER(M53)),NOT(ISNUMBER(N53)),NOT(ISNUMBER(O53))),"",M53*N53*O53)
+E54: =IF(OR($A54="",$B54="",$C54="",$D54=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A54&"|"&$B54&"|"&$C54&"|"&$D54,MASTERFLAT_KEY,0)),"Check Master List"))
+H54: TOTAL
+P54: =IF(COUNT(P49:P53)=0,"",SUM(P49:P53))
+E55: =IF(OR($A55="",$B55="",$C55="",$D55=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A55&"|"&$B55&"|"&$C55&"|"&$D55,MASTERFLAT_KEY,0)),"Check Master List"))
+H55: Master Bedroom
+E56: =IF(OR($A56="",$B56="",$C56="",$D56=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A56&"|"&$B56&"|"&$C56&"|"&$D56,MASTERFLAT_KEY,0)),"Check Master List"))
+G56: 4000
+H56: 30
+I56: Swing Wardrobe
+J56: =B56&" + "&C56&" + "&D56
+K56: 18
+L56: 7
+M56: =IF(AND(ISNUMBER(K56),ISNUMBER(L56)),K56*L56,"")
+N56: 1
+O56: =IF(NOT(ISNUMBER(E56)),"",E56+IF(ISNUMBER(G56),G56,0))
+P56: =IF(OR(NOT(ISNUMBER(M56)),NOT(ISNUMBER(N56)),NOT(ISNUMBER(O56))),"",M56*N56*O56)
+E57: =IF(OR($A57="",$B57="",$C57="",$D57=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A57&"|"&$B57&"|"&$C57&"|"&$D57,MASTERFLAT_KEY,0)),"Check Master List"))
+H57: 31
+I57: Lofts
+J57: =B57&" + "&C57&" + "&D57
+K57: 18
+L57: 3
+M57: =IF(AND(ISNUMBER(K57),ISNUMBER(L57)),K57*L57,"")
+N57: 1
+O57: =IF(NOT(ISNUMBER(E57)),"",E57+IF(ISNUMBER(G57),G57,0))
+P57: =IF(OR(NOT(ISNUMBER(M57)),NOT(ISNUMBER(N57)),NOT(ISNUMBER(O57))),"",M57*N57*O57)
+E58: =IF(OR($A58="",$B58="",$C58="",$D58=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A58&"|"&$B58&"|"&$C58&"|"&$D58,MASTERFLAT_KEY,0)),"Check Master List"))
+H58: 32
+I58: Dressing Mirror
+J58: =B58&" + "&C58&" + "&D58
+K58: 2.7
+L58: 2.5
+M58: =IF(AND(ISNUMBER(K58),ISNUMBER(L58)),K58*L58,"")
+N58: 1
+O58: =IF(NOT(ISNUMBER(E58)),"",E58+IF(ISNUMBER(G58),G58,0))
+P58: =IF(OR(NOT(ISNUMBER(M58)),NOT(ISNUMBER(N58)),NOT(ISNUMBER(O58))),"",M58*N58*O58)
+E59: =IF(OR($A59="",$B59="",$C59="",$D59=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A59&"|"&$B59&"|"&$C59&"|"&$D59,MASTERFLAT_KEY,0)),"Check Master List"))
+H59: 33
+J59: =B59&" + "&C59&" + "&D59
+K59: 2.5
+L59: 4.5
+M59: =IF(AND(ISNUMBER(K59),ISNUMBER(L59)),K59*L59,"")
+N59: 1
+O59: =IF(NOT(ISNUMBER(E59)),"",E59+IF(ISNUMBER(G59),G59,0))
+P59: =IF(OR(NOT(ISNUMBER(M59)),NOT(ISNUMBER(N59)),NOT(ISNUMBER(O59))),"",M59*N59*O59)
+E60: =IF(OR($A60="",$B60="",$C60="",$D60=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A60&"|"&$B60&"|"&$C60&"|"&$D60,MASTERFLAT_KEY,0)),"Check Master List"))
+H60: 34
+I60: Cot bed
+J60: =B60&" + "&C60&" + "&D60
+K60: 7
+L60: 7
+M60: =IF(AND(ISNUMBER(K60),ISNUMBER(L60)),K60*L60,"")
+N60: 1
+O60: =IF(NOT(ISNUMBER(E60)),"",E60+IF(ISNUMBER(G60),G60,0))
+P60: =IF(OR(NOT(ISNUMBER(M60)),NOT(ISNUMBER(N60)),NOT(ISNUMBER(O60))),"",M60*N60*O60)
+E61: =IF(OR($A61="",$B61="",$C61="",$D61=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A61&"|"&$B61&"|"&$C61&"|"&$D61,MASTERFLAT_KEY,0)),"Check Master List"))
+H61: 35
+I61: Headboard
+J61: =B61&" + "&C61&" + "&D61
+K61: 7
+L61: 2
+M61: =IF(AND(ISNUMBER(K61),ISNUMBER(L61)),K61*L61,"")
+N61: 1
+O61: =IF(NOT(ISNUMBER(E61)),"",E61+IF(ISNUMBER(G61),G61,0))
+P61: =IF(OR(NOT(ISNUMBER(M61)),NOT(ISNUMBER(N61)),NOT(ISNUMBER(O61))),"",M61*N61*O61)
+E62: =IF(OR($A62="",$B62="",$C62="",$D62=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A62&"|"&$B62&"|"&$C62&"|"&$D62,MASTERFLAT_KEY,0)),"Check Master List"))
+H62: 36
+I62: Bed side table
+J62: =B62&" + "&C62&" + "&D62
+K62: 1.5
+L62: 1.5
+M62: =IF(AND(ISNUMBER(K62),ISNUMBER(L62)),K62*L62,"")
+N62: 1
+O62: =IF(NOT(ISNUMBER(E62)),"",E62+IF(ISNUMBER(G62),G62,0))
+P62: =IF(OR(NOT(ISNUMBER(M62)),NOT(ISNUMBER(N62)),NOT(ISNUMBER(O62))),"",M62*N62*O62)
+E63: =IF(OR($A63="",$B63="",$C63="",$D63=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A63&"|"&$B63&"|"&$C63&"|"&$D63,MASTERFLAT_KEY,0)),"Check Master List"))
+H63: TOTAL
+P63: =IF(COUNT(P56:P62)=0,"",SUM(P56:P62))
+E64: =IF(OR($A64="",$B64="",$C64="",$D64=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A64&"|"&$B64&"|"&$C64&"|"&$D64,MASTERFLAT_KEY,0)),"Check Master List"))
+H64: Bathrooms
+E65: =IF(OR($A65="",$B65="",$C65="",$D65=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A65&"|"&$B65&"|"&$C65&"|"&$D65,MASTERFLAT_KEY,0)),"Check Master List"))
+H65: 37
+I65: Vanity Mirror
+J65: =B65&" + "&C65&" + "&D65
+K65: 2
+L65: 3
+M65: =IF(AND(ISNUMBER(K65),ISNUMBER(L65)),K65*L65,"")
+N65: 4
+O65: =IF(NOT(ISNUMBER(E65)),"",E65+IF(ISNUMBER(G65),G65,0))
+P65: =IF(OR(NOT(ISNUMBER(M65)),NOT(ISNUMBER(N65)),NOT(ISNUMBER(O65))),"",M65*N65*O65)
+E66: =IF(OR($A66="",$B66="",$C66="",$D66=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A66&"|"&$B66&"|"&$C66&"|"&$D66,MASTERFLAT_KEY,0)),"Check Master List"))
+H66: 38
+I66: Vanity Unit
+J66: =B66&" + "&C66&" + "&D66
+K66: 2.5
+L66: 2
+M66: =IF(AND(ISNUMBER(K66),ISNUMBER(L66)),K66*L66,"")
+N66: 4
+O66: =IF(NOT(ISNUMBER(E66)),"",E66+IF(ISNUMBER(G66),G66,0))
+P66: =IF(OR(NOT(ISNUMBER(M66)),NOT(ISNUMBER(N66)),NOT(ISNUMBER(O66))),"",M66*N66*O66)
+E67: =IF(OR($A67="",$B67="",$C67="",$D67=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A67&"|"&$B67&"|"&$C67&"|"&$D67,MASTERFLAT_KEY,0)),"Check Master List"))
+H67: TOTAL
+P67: =IF(COUNT(P65:P66)=0,"",SUM(P65:P66))
+E68: =IF(OR($A68="",$B68="",$C68="",$D68=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A68&"|"&$B68&"|"&$C68&"|"&$D68,MASTERFLAT_KEY,0)),"Check Master List"))
+H68: SUB TOTAL
+P68: =IF(COUNT(P16,P22,P27,P34,P42,P47,P54,P63,P67)=0,"",SUM(P16,P22,P27,P34,P42,P47,P54,P63,P67))
+E69: =IF(OR($A69="",$B69="",$C69="",$D69=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A69&"|"&$B69&"|"&$C69&"|"&$D69,MASTERFLAT_KEY,0)),"Check Master List"))
+H69: GST 18%
+P69: =IF(NOT(ISNUMBER(P68)),"",P68*18%)
+E70: =IF(OR($A70="",$B70="",$C70="",$D70=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A70&"|"&$B70&"|"&$C70&"|"&$D70,MASTERFLAT_KEY,0)),"Check Master List"))
+H70: TOTAL
+P70: =IF(NOT(ISNUMBER(P68)),"",P68+P69)
+E71: =IF(OR($A71="",$B71="",$C71="",$D71=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A71&"|"&$B71&"|"&$C71&"|"&$D71,MASTERFLAT_KEY,0)),"Check Master List"))
+H71: =IF(NOT(ISNUMBER(P70)),"",IF(INT(P70)=0,"Zero Rupees Only",TRIM(IF(INT(P70/10000000)>0,VLOOKUP(INT(P70/10000000),NumberWords!$A$2:$B$1001,2,FALSE())&" Crore ","")&IF(INT(MOD(P70,10000000)/100000)>0,VLOOKUP(INT(MOD(P70,10000000)/100000),NumberWords!$A$2:$B$1001,2,FALSE())&" Lakh ","")&IF(INT(MOD(P70,100000)/1000)>0,VLOOKUP(INT(MOD(P70,100000)/1000),NumberWords!$A$2:$B$1001,2,FALSE())&" Thousand ","")&IF(INT(MOD(P70,1000)/100)>0,VLOOKUP(INT(MOD(P70,1000)/100),NumberWords!$A$2:$B$1001,2,FALSE())&" Hundred ","")&IF(MOD(INT(P70),100)>0,VLOOKUP(MOD(INT(P70),100),NumberWords!$A$2:$B$1001,2,FALSE())&" ","")&"Rupees Only")))
+E72: =IF(OR($A72="",$B72="",$C72="",$D72=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A72&"|"&$B72&"|"&$C72&"|"&$D72,MASTERFLAT_KEY,0)),"Check Master List"))
+H72: No.
+I72: Terms & Conditions
+E73: =IF(OR($A73="",$B73="",$C73="",$D73=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A73&"|"&$B73&"|"&$C73&"|"&$D73,MASTERFLAT_KEY,0)),"Check Master List"))
+H73: 1
+I73: The estimate will be valid for a period of 30 days. The quotation is inclusive of GST and transportation.
+E74: =IF(OR($A74="",$B74="",$C74="",$D74=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A74&"|"&$B74&"|"&$C74&"|"&$D74,MASTERFLAT_KEY,0)),"Check Master List"))
+H74: 2
+I74: The actual cost of the project will depend on the final sign-off drawings.
+E75: =IF(OR($A75="",$B75="",$C75="",$D75=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A75&"|"&$B75&"|"&$C75&"|"&$D75,MASTERFLAT_KEY,0)),"Check Master List"))
+H75: 3
+I75: 60% advance payment at the time of booking. Second payment of 30% after delivery. Balance 10% payment upon completion of installation. Any payment made is strictly non-refundable.
+E76: =IF(OR($A76="",$B76="",$C76="",$D76=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A76&"|"&$B76&"|"&$C76&"|"&$D76,MASTERFLAT_KEY,0)),"Check Master List"))
+H76: 4
+I76: Casemelia will not process any file without the client's signature on the agreed proposal and drawings. Mail confirmation will not be accepted unless the signature is endorsed and mailed.
+E77: =IF(OR($A77="",$B77="",$C77="",$D77=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A77&"|"&$B77&"|"&$C77&"|"&$D77,MASTERFLAT_KEY,0)),"Check Master List"))
+H77: 5
+I77: Delivery will be within 4–5 weeks from the finalization of designs, shades, hardware, accessories, and sign-off on production drawings by the client. Casemelia will not be responsible for delays caused by unforeseen circumstances or delays in finalization of drawings/designs.
+E78: =IF(OR($A78="",$B78="",$C78="",$D78=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A78&"|"&$B78&"|"&$C78&"|"&$D78,MASTERFLAT_KEY,0)),"Check Master List"))
+H78: 6
+I78: Accessories/electrical items shown in the images are not part of the product unless mentioned separately. The quotation clearly specifies the inclusions, and anything beyond the stated inclusions will be chargeable.
+E79: =IF(OR($A79="",$B79="",$C79="",$D79=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A79&"|"&$B79&"|"&$C79&"|"&$D79,MASTERFLAT_KEY,0)),"Check Master List"))
+H79: 7
+I79: Casemelia reserves the right to alter/change materials based on technical requirements or material availability without compromising the aesthetics and life of the product. There may be a variation between the color displayed on the website and the actual product color. Slight variations may also occur between the aluminum profile/edge banding and the shutter. Confirmation will be taken from the client.
+E80: =IF(OR($A80="",$B80="",$C80="",$D80=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A80&"|"&$B80&"|"&$C80&"|"&$D80,MASTERFLAT_KEY,0)),"Check Master List"))
+H80: 8
+I80: All modular components manufactured at the factory carry a lifetime warranty, and non-modular components carry a 10-year warranty, subject to site wear and tear conditions.
+E81: =IF(OR($A81="",$B81="",$C81="",$D81=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A81&"|"&$B81&"|"&$C81&"|"&$D81,MASTERFLAT_KEY,0)),"Check Master List"))
+H81: 9
+I81: Civil, plumbing, electrical wiring, and floor protection will be the client's scope. Casemelia will only provide the marking for the same, if required. Power supply should be provided by the client/builder.
+E82: =IF(OR($A82="",$B82="",$C82="",$D82=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A82&"|"&$B82&"|"&$C82&"|"&$D82,MASTERFLAT_KEY,0)),"Check Master List"))
+H82: 10
+I82: No changes will be entertained under any circumstances after sign-off on the production drawings. No alterations will be accepted once delivery is made.
+E83: =IF(OR($A83="",$B83="",$C83="",$D83=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A83&"|"&$B83&"|"&$C83&"|"&$D83,MASTERFLAT_KEY,0)),"Check Master List"))
+H83: 11
+I83: Casemelia will not be responsible for any electrical, plumbing, or civil changes carried out on site after sign-off. All civil and electrical changes must be made after informing the designer, as per requirements, before sign-off and should be reflected in the production drawings.
+E84: =IF(OR($A84="",$B84="",$C84="",$D84=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A84&"|"&$B84&"|"&$C84&"|"&$D84,MASTERFLAT_KEY,0)),"Check Master List"))
+H84: 12
+I84: The client will be responsible for ensuring ample access to move the material into the property and for providing safe and secure storage.
+E85: =IF(OR($A85="",$B85="",$C85="",$D85=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A85&"|"&$B85&"|"&$C85&"|"&$D85,MASTERFLAT_KEY,0)),"Check Master List"))
+H85: 13
+I85: The designs/furniture models shared with the client are the property of Casemelia. Sharing them with competitors will constitute a violation of copyrights.
+E86: =IF(OR($A86="",$B86="",$C86="",$D86=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A86&"|"&$B86&"|"&$C86&"|"&$D86,MASTERFLAT_KEY,0)),"Check Master List"))
+E87: =IF(OR($A87="",$B87="",$C87="",$D87=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A87&"|"&$B87&"|"&$C87&"|"&$D87,MASTERFLAT_KEY,0)),"Check Master List"))
+E88: =IF(OR($A88="",$B88="",$C88="",$D88=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A88&"|"&$B88&"|"&$C88&"|"&$D88,MASTERFLAT_KEY,0)),"Check Master List"))
+E89: =IF(OR($A89="",$B89="",$C89="",$D89=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A89&"|"&$B89&"|"&$C89&"|"&$D89,MASTERFLAT_KEY,0)),"Check Master List"))
+E90: =IF(OR($A90="",$B90="",$C90="",$D90=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A90&"|"&$B90&"|"&$C90&"|"&$D90,MASTERFLAT_KEY,0)),"Check Master List"))
+E91: =IF(OR($A91="",$B91="",$C91="",$D91=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A91&"|"&$B91&"|"&$C91&"|"&$D91,MASTERFLAT_KEY,0)),"Check Master List"))
+E92: =IF(OR($A92="",$B92="",$C92="",$D92=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A92&"|"&$B92&"|"&$C92&"|"&$D92,MASTERFLAT_KEY,0)),"Check Master List"))
+E93: =IF(OR($A93="",$B93="",$C93="",$D93=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A93&"|"&$B93&"|"&$C93&"|"&$D93,MASTERFLAT_KEY,0)),"Check Master List"))
+E94: =IF(OR($A94="",$B94="",$C94="",$D94=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A94&"|"&$B94&"|"&$C94&"|"&$D94,MASTERFLAT_KEY,0)),"Check Master List"))
+E95: =IF(OR($A95="",$B95="",$C95="",$D95=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A95&"|"&$B95&"|"&$C95&"|"&$D95,MASTERFLAT_KEY,0)),"Check Master List"))
+E96: =IF(OR($A96="",$B96="",$C96="",$D96=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A96&"|"&$B96&"|"&$C96&"|"&$D96,MASTERFLAT_KEY,0)),"Check Master List"))
+E97: =IF(OR($A97="",$B97="",$C97="",$D97=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A97&"|"&$B97&"|"&$C97&"|"&$D97,MASTERFLAT_KEY,0)),"Check Master List"))
+E98: =IF(OR($A98="",$B98="",$C98="",$D98=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A98&"|"&$B98&"|"&$C98&"|"&$D98,MASTERFLAT_KEY,0)),"Check Master List"))
+E99: =IF(OR($A99="",$B99="",$C99="",$D99=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A99&"|"&$B99&"|"&$C99&"|"&$D99,MASTERFLAT_KEY,0)),"Check Master List"))
+E100: =IF(OR($A100="",$B100="",$C100="",$D100=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A100&"|"&$B100&"|"&$C100&"|"&$D100,MASTERFLAT_KEY,0)),"Check Master List"))
+E101: =IF(OR($A101="",$B101="",$C101="",$D101=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A101&"|"&$B101&"|"&$C101&"|"&$D101,MASTERFLAT_KEY,0)),"Check Master List"))
+E102: =IF(OR($A102="",$B102="",$C102="",$D102=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A102&"|"&$B102&"|"&$C102&"|"&$D102,MASTERFLAT_KEY,0)),"Check Master List"))
+E103: =IF(OR($A103="",$B103="",$C103="",$D103=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A103&"|"&$B103&"|"&$C103&"|"&$D103,MASTERFLAT_KEY,0)),"Check Master List"))
+E104: =IF(OR($A104="",$B104="",$C104="",$D104=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A104&"|"&$B104&"|"&$C104&"|"&$D104,MASTERFLAT_KEY,0)),"Check Master List"))
+E105: =IF(OR($A105="",$B105="",$C105="",$D105=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A105&"|"&$B105&"|"&$C105&"|"&$D105,MASTERFLAT_KEY,0)),"Check Master List"))
+E106: =IF(OR($A106="",$B106="",$C106="",$D106=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A106&"|"&$B106&"|"&$C106&"|"&$D106,MASTERFLAT_KEY,0)),"Check Master List"))
+E107: =IF(OR($A107="",$B107="",$C107="",$D107=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A107&"|"&$B107&"|"&$C107&"|"&$D107,MASTERFLAT_KEY,0)),"Check Master List"))
+E108: =IF(OR($A108="",$B108="",$C108="",$D108=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A108&"|"&$B108&"|"&$C108&"|"&$D108,MASTERFLAT_KEY,0)),"Check Master List"))
+E109: =IF(OR($A109="",$B109="",$C109="",$D109=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A109&"|"&$B109&"|"&$C109&"|"&$D109,MASTERFLAT_KEY,0)),"Check Master List"))
+E110: =IF(OR($A110="",$B110="",$C110="",$D110=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A110&"|"&$B110&"|"&$C110&"|"&$D110,MASTERFLAT_KEY,0)),"Check Master List"))
+E111: =IF(OR($A111="",$B111="",$C111="",$D111=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A111&"|"&$B111&"|"&$C111&"|"&$D111,MASTERFLAT_KEY,0)),"Check Master List"))
+E112: =IF(OR($A112="",$B112="",$C112="",$D112=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A112&"|"&$B112&"|"&$C112&"|"&$D112,MASTERFLAT_KEY,0)),"Check Master List"))
+E113: =IF(OR($A113="",$B113="",$C113="",$D113=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A113&"|"&$B113&"|"&$C113&"|"&$D113,MASTERFLAT_KEY,0)),"Check Master List"))
+E114: =IF(OR($A114="",$B114="",$C114="",$D114=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A114&"|"&$B114&"|"&$C114&"|"&$D114,MASTERFLAT_KEY,0)),"Check Master List"))
+E115: =IF(OR($A115="",$B115="",$C115="",$D115=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A115&"|"&$B115&"|"&$C115&"|"&$D115,MASTERFLAT_KEY,0)),"Check Master List"))
+E116: =IF(OR($A116="",$B116="",$C116="",$D116=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A116&"|"&$B116&"|"&$C116&"|"&$D116,MASTERFLAT_KEY,0)),"Check Master List"))
+E117: =IF(OR($A117="",$B117="",$C117="",$D117=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A117&"|"&$B117&"|"&$C117&"|"&$D117,MASTERFLAT_KEY,0)),"Check Master List"))
+E118: =IF(OR($A118="",$B118="",$C118="",$D118=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A118&"|"&$B118&"|"&$C118&"|"&$D118,MASTERFLAT_KEY,0)),"Check Master List"))
+E119: =IF(OR($A119="",$B119="",$C119="",$D119=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A119&"|"&$B119&"|"&$C119&"|"&$D119,MASTERFLAT_KEY,0)),"Check Master List"))
+E120: =IF(OR($A120="",$B120="",$C120="",$D120=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A120&"|"&$B120&"|"&$C120&"|"&$D120,MASTERFLAT_KEY,0)),"Check Master List"))
+E121: =IF(OR($A121="",$B121="",$C121="",$D121=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A121&"|"&$B121&"|"&$C121&"|"&$D121,MASTERFLAT_KEY,0)),"Check Master List"))
+E122: =IF(OR($A122="",$B122="",$C122="",$D122=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A122&"|"&$B122&"|"&$C122&"|"&$D122,MASTERFLAT_KEY,0)),"Check Master List"))
+E123: =IF(OR($A123="",$B123="",$C123="",$D123=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A123&"|"&$B123&"|"&$C123&"|"&$D123,MASTERFLAT_KEY,0)),"Check Master List"))
+E124: =IF(OR($A124="",$B124="",$C124="",$D124=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A124&"|"&$B124&"|"&$C124&"|"&$D124,MASTERFLAT_KEY,0)),"Check Master List"))
+E125: =IF(OR($A125="",$B125="",$C125="",$D125=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A125&"|"&$B125&"|"&$C125&"|"&$D125,MASTERFLAT_KEY,0)),"Check Master List"))
+E126: =IF(OR($A126="",$B126="",$C126="",$D126=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A126&"|"&$B126&"|"&$C126&"|"&$D126,MASTERFLAT_KEY,0)),"Check Master List"))
+E127: =IF(OR($A127="",$B127="",$C127="",$D127=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A127&"|"&$B127&"|"&$C127&"|"&$D127,MASTERFLAT_KEY,0)),"Check Master List"))
+E128: =IF(OR($A128="",$B128="",$C128="",$D128=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A128&"|"&$B128&"|"&$C128&"|"&$D128,MASTERFLAT_KEY,0)),"Check Master List"))
+E129: =IF(OR($A129="",$B129="",$C129="",$D129=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A129&"|"&$B129&"|"&$C129&"|"&$D129,MASTERFLAT_KEY,0)),"Check Master List"))
+E130: =IF(OR($A130="",$B130="",$C130="",$D130=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A130&"|"&$B130&"|"&$C130&"|"&$D130,MASTERFLAT_KEY,0)),"Check Master List"))
+E131: =IF(OR($A131="",$B131="",$C131="",$D131=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A131&"|"&$B131&"|"&$C131&"|"&$D131,MASTERFLAT_KEY,0)),"Check Master List"))
+E132: =IF(OR($A132="",$B132="",$C132="",$D132=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A132&"|"&$B132&"|"&$C132&"|"&$D132,MASTERFLAT_KEY,0)),"Check Master List"))
+E133: =IF(OR($A133="",$B133="",$C133="",$D133=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A133&"|"&$B133&"|"&$C133&"|"&$D133,MASTERFLAT_KEY,0)),"Check Master List"))
+E134: =IF(OR($A134="",$B134="",$C134="",$D134=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A134&"|"&$B134&"|"&$C134&"|"&$D134,MASTERFLAT_KEY,0)),"Check Master List"))
+E135: =IF(OR($A135="",$B135="",$C135="",$D135=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A135&"|"&$B135&"|"&$C135&"|"&$D135,MASTERFLAT_KEY,0)),"Check Master List"))
+E136: =IF(OR($A136="",$B136="",$C136="",$D136=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A136&"|"&$B136&"|"&$C136&"|"&$D136,MASTERFLAT_KEY,0)),"Check Master List"))
+E137: =IF(OR($A137="",$B137="",$C137="",$D137=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A137&"|"&$B137&"|"&$C137&"|"&$D137,MASTERFLAT_KEY,0)),"Check Master List"))
+E138: =IF(OR($A138="",$B138="",$C138="",$D138=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A138&"|"&$B138&"|"&$C138&"|"&$D138,MASTERFLAT_KEY,0)),"Check Master List"))
+E139: =IF(OR($A139="",$B139="",$C139="",$D139=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A139&"|"&$B139&"|"&$C139&"|"&$D139,MASTERFLAT_KEY,0)),"Check Master List"))
+E140: =IF(OR($A140="",$B140="",$C140="",$D140=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A140&"|"&$B140&"|"&$C140&"|"&$D140,MASTERFLAT_KEY,0)),"Check Master List"))
+E141: =IF(OR($A141="",$B141="",$C141="",$D141=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A141&"|"&$B141&"|"&$C141&"|"&$D141,MASTERFLAT_KEY,0)),"Check Master List"))
+E142: =IF(OR($A142="",$B142="",$C142="",$D142=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A142&"|"&$B142&"|"&$C142&"|"&$D142,MASTERFLAT_KEY,0)),"Check Master List"))
+E143: =IF(OR($A143="",$B143="",$C143="",$D143=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A143&"|"&$B143&"|"&$C143&"|"&$D143,MASTERFLAT_KEY,0)),"Check Master List"))
+E144: =IF(OR($A144="",$B144="",$C144="",$D144=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A144&"|"&$B144&"|"&$C144&"|"&$D144,MASTERFLAT_KEY,0)),"Check Master List"))
+E145: =IF(OR($A145="",$B145="",$C145="",$D145=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A145&"|"&$B145&"|"&$C145&"|"&$D145,MASTERFLAT_KEY,0)),"Check Master List"))
+E146: =IF(OR($A146="",$B146="",$C146="",$D146=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A146&"|"&$B146&"|"&$C146&"|"&$D146,MASTERFLAT_KEY,0)),"Check Master List"))
+E147: =IF(OR($A147="",$B147="",$C147="",$D147=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A147&"|"&$B147&"|"&$C147&"|"&$D147,MASTERFLAT_KEY,0)),"Check Master List"))
+E148: =IF(OR($A148="",$B148="",$C148="",$D148=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A148&"|"&$B148&"|"&$C148&"|"&$D148,MASTERFLAT_KEY,0)),"Check Master List"))
+E149: =IF(OR($A149="",$B149="",$C149="",$D149=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A149&"|"&$B149&"|"&$C149&"|"&$D149,MASTERFLAT_KEY,0)),"Check Master List"))
+E150: =IF(OR($A150="",$B150="",$C150="",$D150=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A150&"|"&$B150&"|"&$C150&"|"&$D150,MASTERFLAT_KEY,0)),"Check Master List"))
+E151: =IF(OR($A151="",$B151="",$C151="",$D151=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A151&"|"&$B151&"|"&$C151&"|"&$D151,MASTERFLAT_KEY,0)),"Check Master List"))
+E152: =IF(OR($A152="",$B152="",$C152="",$D152=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A152&"|"&$B152&"|"&$C152&"|"&$D152,MASTERFLAT_KEY,0)),"Check Master List"))
+E153: =IF(OR($A153="",$B153="",$C153="",$D153=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A153&"|"&$B153&"|"&$C153&"|"&$D153,MASTERFLAT_KEY,0)),"Check Master List"))
+E154: =IF(OR($A154="",$B154="",$C154="",$D154=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A154&"|"&$B154&"|"&$C154&"|"&$D154,MASTERFLAT_KEY,0)),"Check Master List"))
+E155: =IF(OR($A155="",$B155="",$C155="",$D155=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A155&"|"&$B155&"|"&$C155&"|"&$D155,MASTERFLAT_KEY,0)),"Check Master List"))
+E156: =IF(OR($A156="",$B156="",$C156="",$D156=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A156&"|"&$B156&"|"&$C156&"|"&$D156,MASTERFLAT_KEY,0)),"Check Master List"))
+E157: =IF(OR($A157="",$B157="",$C157="",$D157=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A157&"|"&$B157&"|"&$C157&"|"&$D157,MASTERFLAT_KEY,0)),"Check Master List"))
+E158: =IF(OR($A158="",$B158="",$C158="",$D158=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A158&"|"&$B158&"|"&$C158&"|"&$D158,MASTERFLAT_KEY,0)),"Check Master List"))
+E159: =IF(OR($A159="",$B159="",$C159="",$D159=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A159&"|"&$B159&"|"&$C159&"|"&$D159,MASTERFLAT_KEY,0)),"Check Master List"))
+E160: =IF(OR($A160="",$B160="",$C160="",$D160=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A160&"|"&$B160&"|"&$C160&"|"&$D160,MASTERFLAT_KEY,0)),"Check Master List"))
+E161: =IF(OR($A161="",$B161="",$C161="",$D161=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A161&"|"&$B161&"|"&$C161&"|"&$D161,MASTERFLAT_KEY,0)),"Check Master List"))
+E162: =IF(OR($A162="",$B162="",$C162="",$D162=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A162&"|"&$B162&"|"&$C162&"|"&$D162,MASTERFLAT_KEY,0)),"Check Master List"))
+E163: =IF(OR($A163="",$B163="",$C163="",$D163=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A163&"|"&$B163&"|"&$C163&"|"&$D163,MASTERFLAT_KEY,0)),"Check Master List"))
+E164: =IF(OR($A164="",$B164="",$C164="",$D164=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A164&"|"&$B164&"|"&$C164&"|"&$D164,MASTERFLAT_KEY,0)),"Check Master List"))
+E165: =IF(OR($A165="",$B165="",$C165="",$D165=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A165&"|"&$B165&"|"&$C165&"|"&$D165,MASTERFLAT_KEY,0)),"Check Master List"))
+E166: =IF(OR($A166="",$B166="",$C166="",$D166=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A166&"|"&$B166&"|"&$C166&"|"&$D166,MASTERFLAT_KEY,0)),"Check Master List"))
+E167: =IF(OR($A167="",$B167="",$C167="",$D167=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A167&"|"&$B167&"|"&$C167&"|"&$D167,MASTERFLAT_KEY,0)),"Check Master List"))
+E168: =IF(OR($A168="",$B168="",$C168="",$D168=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A168&"|"&$B168&"|"&$C168&"|"&$D168,MASTERFLAT_KEY,0)),"Check Master List"))
+E169: =IF(OR($A169="",$B169="",$C169="",$D169=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A169&"|"&$B169&"|"&$C169&"|"&$D169,MASTERFLAT_KEY,0)),"Check Master List"))
+E170: =IF(OR($A170="",$B170="",$C170="",$D170=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A170&"|"&$B170&"|"&$C170&"|"&$D170,MASTERFLAT_KEY,0)),"Check Master List"))
+E171: =IF(OR($A171="",$B171="",$C171="",$D171=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A171&"|"&$B171&"|"&$C171&"|"&$D171,MASTERFLAT_KEY,0)),"Check Master List"))
+E172: =IF(OR($A172="",$B172="",$C172="",$D172=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A172&"|"&$B172&"|"&$C172&"|"&$D172,MASTERFLAT_KEY,0)),"Check Master List"))
+E173: =IF(OR($A173="",$B173="",$C173="",$D173=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A173&"|"&$B173&"|"&$C173&"|"&$D173,MASTERFLAT_KEY,0)),"Check Master List"))
+E174: =IF(OR($A174="",$B174="",$C174="",$D174=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A174&"|"&$B174&"|"&$C174&"|"&$D174,MASTERFLAT_KEY,0)),"Check Master List"))
+E175: =IF(OR($A175="",$B175="",$C175="",$D175=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A175&"|"&$B175&"|"&$C175&"|"&$D175,MASTERFLAT_KEY,0)),"Check Master List"))
+E176: =IF(OR($A176="",$B176="",$C176="",$D176=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A176&"|"&$B176&"|"&$C176&"|"&$D176,MASTERFLAT_KEY,0)),"Check Master List"))
+E177: =IF(OR($A177="",$B177="",$C177="",$D177=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A177&"|"&$B177&"|"&$C177&"|"&$D177,MASTERFLAT_KEY,0)),"Check Master List"))
+E178: =IF(OR($A178="",$B178="",$C178="",$D178=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A178&"|"&$B178&"|"&$C178&"|"&$D178,MASTERFLAT_KEY,0)),"Check Master List"))
+E179: =IF(OR($A179="",$B179="",$C179="",$D179=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A179&"|"&$B179&"|"&$C179&"|"&$D179,MASTERFLAT_KEY,0)),"Check Master List"))
+E180: =IF(OR($A180="",$B180="",$C180="",$D180=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A180&"|"&$B180&"|"&$C180&"|"&$D180,MASTERFLAT_KEY,0)),"Check Master List"))
+E181: =IF(OR($A181="",$B181="",$C181="",$D181=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A181&"|"&$B181&"|"&$C181&"|"&$D181,MASTERFLAT_KEY,0)),"Check Master List"))
+E182: =IF(OR($A182="",$B182="",$C182="",$D182=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A182&"|"&$B182&"|"&$C182&"|"&$D182,MASTERFLAT_KEY,0)),"Check Master List"))
+E183: =IF(OR($A183="",$B183="",$C183="",$D183=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A183&"|"&$B183&"|"&$C183&"|"&$D183,MASTERFLAT_KEY,0)),"Check Master List"))
+E184: =IF(OR($A184="",$B184="",$C184="",$D184=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A184&"|"&$B184&"|"&$C184&"|"&$D184,MASTERFLAT_KEY,0)),"Check Master List"))
+E185: =IF(OR($A185="",$B185="",$C185="",$D185=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A185&"|"&$B185&"|"&$C185&"|"&$D185,MASTERFLAT_KEY,0)),"Check Master List"))
+E186: =IF(OR($A186="",$B186="",$C186="",$D186=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A186&"|"&$B186&"|"&$C186&"|"&$D186,MASTERFLAT_KEY,0)),"Check Master List"))
+E187: =IF(OR($A187="",$B187="",$C187="",$D187=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A187&"|"&$B187&"|"&$C187&"|"&$D187,MASTERFLAT_KEY,0)),"Check Master List"))
+E188: =IF(OR($A188="",$B188="",$C188="",$D188=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A188&"|"&$B188&"|"&$C188&"|"&$D188,MASTERFLAT_KEY,0)),"Check Master List"))
+E189: =IF(OR($A189="",$B189="",$C189="",$D189=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A189&"|"&$B189&"|"&$C189&"|"&$D189,MASTERFLAT_KEY,0)),"Check Master List"))
+E190: =IF(OR($A190="",$B190="",$C190="",$D190=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A190&"|"&$B190&"|"&$C190&"|"&$D190,MASTERFLAT_KEY,0)),"Check Master List"))
+E191: =IF(OR($A191="",$B191="",$C191="",$D191=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A191&"|"&$B191&"|"&$C191&"|"&$D191,MASTERFLAT_KEY,0)),"Check Master List"))
+E192: =IF(OR($A192="",$B192="",$C192="",$D192=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A192&"|"&$B192&"|"&$C192&"|"&$D192,MASTERFLAT_KEY,0)),"Check Master List"))
+E193: =IF(OR($A193="",$B193="",$C193="",$D193=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A193&"|"&$B193&"|"&$C193&"|"&$D193,MASTERFLAT_KEY,0)),"Check Master List"))
+E194: =IF(OR($A194="",$B194="",$C194="",$D194=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A194&"|"&$B194&"|"&$C194&"|"&$D194,MASTERFLAT_KEY,0)),"Check Master List"))
+E195: =IF(OR($A195="",$B195="",$C195="",$D195=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A195&"|"&$B195&"|"&$C195&"|"&$D195,MASTERFLAT_KEY,0)),"Check Master List"))
+E196: =IF(OR($A196="",$B196="",$C196="",$D196=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A196&"|"&$B196&"|"&$C196&"|"&$D196,MASTERFLAT_KEY,0)),"Check Master List"))
+E197: =IF(OR($A197="",$B197="",$C197="",$D197=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A197&"|"&$B197&"|"&$C197&"|"&$D197,MASTERFLAT_KEY,0)),"Check Master List"))
+E198: =IF(OR($A198="",$B198="",$C198="",$D198=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A198&"|"&$B198&"|"&$C198&"|"&$D198,MASTERFLAT_KEY,0)),"Check Master List"))
+E199: =IF(OR($A199="",$B199="",$C199="",$D199=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A199&"|"&$B199&"|"&$C199&"|"&$D199,MASTERFLAT_KEY,0)),"Check Master List"))
+E200: =IF(OR($A200="",$B200="",$C200="",$D200=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A200&"|"&$B200&"|"&$C200&"|"&$D200,MASTERFLAT_KEY,0)),"Check Master List"))
+E201: =IF(OR($A201="",$B201="",$C201="",$D201=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A201&"|"&$B201&"|"&$C201&"|"&$D201,MASTERFLAT_KEY,0)),"Check Master List"))
+E202: =IF(OR($A202="",$B202="",$C202="",$D202=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A202&"|"&$B202&"|"&$C202&"|"&$D202,MASTERFLAT_KEY,0)),"Check Master List"))
+E203: =IF(OR($A203="",$B203="",$C203="",$D203=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A203&"|"&$B203&"|"&$C203&"|"&$D203,MASTERFLAT_KEY,0)),"Check Master List"))
+E204: =IF(OR($A204="",$B204="",$C204="",$D204=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A204&"|"&$B204&"|"&$C204&"|"&$D204,MASTERFLAT_KEY,0)),"Check Master List"))
+E205: =IF(OR($A205="",$B205="",$C205="",$D205=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A205&"|"&$B205&"|"&$C205&"|"&$D205,MASTERFLAT_KEY,0)),"Check Master List"))
+E206: =IF(OR($A206="",$B206="",$C206="",$D206=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A206&"|"&$B206&"|"&$C206&"|"&$D206,MASTERFLAT_KEY,0)),"Check Master List"))
+E207: =IF(OR($A207="",$B207="",$C207="",$D207=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A207&"|"&$B207&"|"&$C207&"|"&$D207,MASTERFLAT_KEY,0)),"Check Master List"))
+E208: =IF(OR($A208="",$B208="",$C208="",$D208=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A208&"|"&$B208&"|"&$C208&"|"&$D208,MASTERFLAT_KEY,0)),"Check Master List"))
+E209: =IF(OR($A209="",$B209="",$C209="",$D209=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A209&"|"&$B209&"|"&$C209&"|"&$D209,MASTERFLAT_KEY,0)),"Check Master List"))
+E210: =IF(OR($A210="",$B210="",$C210="",$D210=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A210&"|"&$B210&"|"&$C210&"|"&$D210,MASTERFLAT_KEY,0)),"Check Master List"))
+E211: =IF(OR($A211="",$B211="",$C211="",$D211=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A211&"|"&$B211&"|"&$C211&"|"&$D211,MASTERFLAT_KEY,0)),"Check Master List"))
+E212: =IF(OR($A212="",$B212="",$C212="",$D212=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A212&"|"&$B212&"|"&$C212&"|"&$D212,MASTERFLAT_KEY,0)),"Check Master List"))
+E213: =IF(OR($A213="",$B213="",$C213="",$D213=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A213&"|"&$B213&"|"&$C213&"|"&$D213,MASTERFLAT_KEY,0)),"Check Master List"))
+E214: =IF(OR($A214="",$B214="",$C214="",$D214=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A214&"|"&$B214&"|"&$C214&"|"&$D214,MASTERFLAT_KEY,0)),"Check Master List"))
+E215: =IF(OR($A215="",$B215="",$C215="",$D215=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A215&"|"&$B215&"|"&$C215&"|"&$D215,MASTERFLAT_KEY,0)),"Check Master List"))
+E216: =IF(OR($A216="",$B216="",$C216="",$D216=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A216&"|"&$B216&"|"&$C216&"|"&$D216,MASTERFLAT_KEY,0)),"Check Master List"))
+E217: =IF(OR($A217="",$B217="",$C217="",$D217=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A217&"|"&$B217&"|"&$C217&"|"&$D217,MASTERFLAT_KEY,0)),"Check Master List"))
+E218: =IF(OR($A218="",$B218="",$C218="",$D218=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A218&"|"&$B218&"|"&$C218&"|"&$D218,MASTERFLAT_KEY,0)),"Check Master List"))
+E219: =IF(OR($A219="",$B219="",$C219="",$D219=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A219&"|"&$B219&"|"&$C219&"|"&$D219,MASTERFLAT_KEY,0)),"Check Master List"))
+E220: =IF(OR($A220="",$B220="",$C220="",$D220=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A220&"|"&$B220&"|"&$C220&"|"&$D220,MASTERFLAT_KEY,0)),"Check Master List"))
+E221: =IF(OR($A221="",$B221="",$C221="",$D221=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A221&"|"&$B221&"|"&$C221&"|"&$D221,MASTERFLAT_KEY,0)),"Check Master List"))
+E222: =IF(OR($A222="",$B222="",$C222="",$D222=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A222&"|"&$B222&"|"&$C222&"|"&$D222,MASTERFLAT_KEY,0)),"Check Master List"))
+E223: =IF(OR($A223="",$B223="",$C223="",$D223=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A223&"|"&$B223&"|"&$C223&"|"&$D223,MASTERFLAT_KEY,0)),"Check Master List"))
+E224: =IF(OR($A224="",$B224="",$C224="",$D224=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A224&"|"&$B224&"|"&$C224&"|"&$D224,MASTERFLAT_KEY,0)),"Check Master List"))
+E225: =IF(OR($A225="",$B225="",$C225="",$D225=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A225&"|"&$B225&"|"&$C225&"|"&$D225,MASTERFLAT_KEY,0)),"Check Master List"))
+E226: =IF(OR($A226="",$B226="",$C226="",$D226=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A226&"|"&$B226&"|"&$C226&"|"&$D226,MASTERFLAT_KEY,0)),"Check Master List"))
+E227: =IF(OR($A227="",$B227="",$C227="",$D227=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A227&"|"&$B227&"|"&$C227&"|"&$D227,MASTERFLAT_KEY,0)),"Check Master List"))
+E228: =IF(OR($A228="",$B228="",$C228="",$D228=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A228&"|"&$B228&"|"&$C228&"|"&$D228,MASTERFLAT_KEY,0)),"Check Master List"))
+E229: =IF(OR($A229="",$B229="",$C229="",$D229=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A229&"|"&$B229&"|"&$C229&"|"&$D229,MASTERFLAT_KEY,0)),"Check Master List"))
+E230: =IF(OR($A230="",$B230="",$C230="",$D230=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A230&"|"&$B230&"|"&$C230&"|"&$D230,MASTERFLAT_KEY,0)),"Check Master List"))
+E231: =IF(OR($A231="",$B231="",$C231="",$D231=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A231&"|"&$B231&"|"&$C231&"|"&$D231,MASTERFLAT_KEY,0)),"Check Master List"))
+E232: =IF(OR($A232="",$B232="",$C232="",$D232=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A232&"|"&$B232&"|"&$C232&"|"&$D232,MASTERFLAT_KEY,0)),"Check Master List"))
+E233: =IF(OR($A233="",$B233="",$C233="",$D233=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A233&"|"&$B233&"|"&$C233&"|"&$D233,MASTERFLAT_KEY,0)),"Check Master List"))
+E234: =IF(OR($A234="",$B234="",$C234="",$D234=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A234&"|"&$B234&"|"&$C234&"|"&$D234,MASTERFLAT_KEY,0)),"Check Master List"))
+E235: =IF(OR($A235="",$B235="",$C235="",$D235=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A235&"|"&$B235&"|"&$C235&"|"&$D235,MASTERFLAT_KEY,0)),"Check Master List"))
+E236: =IF(OR($A236="",$B236="",$C236="",$D236=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A236&"|"&$B236&"|"&$C236&"|"&$D236,MASTERFLAT_KEY,0)),"Check Master List"))
+E237: =IF(OR($A237="",$B237="",$C237="",$D237=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A237&"|"&$B237&"|"&$C237&"|"&$D237,MASTERFLAT_KEY,0)),"Check Master List"))
+E238: =IF(OR($A238="",$B238="",$C238="",$D238=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A238&"|"&$B238&"|"&$C238&"|"&$D238,MASTERFLAT_KEY,0)),"Check Master List"))
+E239: =IF(OR($A239="",$B239="",$C239="",$D239=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A239&"|"&$B239&"|"&$C239&"|"&$D239,MASTERFLAT_KEY,0)),"Check Master List"))
+E240: =IF(OR($A240="",$B240="",$C240="",$D240=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A240&"|"&$B240&"|"&$C240&"|"&$D240,MASTERFLAT_KEY,0)),"Check Master List"))
+E241: =IF(OR($A241="",$B241="",$C241="",$D241=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A241&"|"&$B241&"|"&$C241&"|"&$D241,MASTERFLAT_KEY,0)),"Check Master List"))
+E242: =IF(OR($A242="",$B242="",$C242="",$D242=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A242&"|"&$B242&"|"&$C242&"|"&$D242,MASTERFLAT_KEY,0)),"Check Master List"))
+E243: =IF(OR($A243="",$B243="",$C243="",$D243=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A243&"|"&$B243&"|"&$C243&"|"&$D243,MASTERFLAT_KEY,0)),"Check Master List"))
+E244: =IF(OR($A244="",$B244="",$C244="",$D244=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A244&"|"&$B244&"|"&$C244&"|"&$D244,MASTERFLAT_KEY,0)),"Check Master List"))
+E245: =IF(OR($A245="",$B245="",$C245="",$D245=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A245&"|"&$B245&"|"&$C245&"|"&$D245,MASTERFLAT_KEY,0)),"Check Master List"))
+E246: =IF(OR($A246="",$B246="",$C246="",$D246=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A246&"|"&$B246&"|"&$C246&"|"&$D246,MASTERFLAT_KEY,0)),"Check Master List"))
+E247: =IF(OR($A247="",$B247="",$C247="",$D247=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A247&"|"&$B247&"|"&$C247&"|"&$D247,MASTERFLAT_KEY,0)),"Check Master List"))
+E248: =IF(OR($A248="",$B248="",$C248="",$D248=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A248&"|"&$B248&"|"&$C248&"|"&$D248,MASTERFLAT_KEY,0)),"Check Master List"))
+E249: =IF(OR($A249="",$B249="",$C249="",$D249=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A249&"|"&$B249&"|"&$C249&"|"&$D249,MASTERFLAT_KEY,0)),"Check Master List"))
+E250: =IF(OR($A250="",$B250="",$C250="",$D250=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A250&"|"&$B250&"|"&$C250&"|"&$D250,MASTERFLAT_KEY,0)),"Check Master List"))
+E251: =IF(OR($A251="",$B251="",$C251="",$D251=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A251&"|"&$B251&"|"&$C251&"|"&$D251,MASTERFLAT_KEY,0)),"Check Master List"))
+E252: =IF(OR($A252="",$B252="",$C252="",$D252=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A252&"|"&$B252&"|"&$C252&"|"&$D252,MASTERFLAT_KEY,0)),"Check Master List"))
+E253: =IF(OR($A253="",$B253="",$C253="",$D253=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A253&"|"&$B253&"|"&$C253&"|"&$D253,MASTERFLAT_KEY,0)),"Check Master List"))
+E254: =IF(OR($A254="",$B254="",$C254="",$D254=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A254&"|"&$B254&"|"&$C254&"|"&$D254,MASTERFLAT_KEY,0)),"Check Master List"))
+E255: =IF(OR($A255="",$B255="",$C255="",$D255=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A255&"|"&$B255&"|"&$C255&"|"&$D255,MASTERFLAT_KEY,0)),"Check Master List"))
+E256: =IF(OR($A256="",$B256="",$C256="",$D256=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A256&"|"&$B256&"|"&$C256&"|"&$D256,MASTERFLAT_KEY,0)),"Check Master List"))
+E257: =IF(OR($A257="",$B257="",$C257="",$D257=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A257&"|"&$B257&"|"&$C257&"|"&$D257,MASTERFLAT_KEY,0)),"Check Master List"))
+E258: =IF(OR($A258="",$B258="",$C258="",$D258=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A258&"|"&$B258&"|"&$C258&"|"&$D258,MASTERFLAT_KEY,0)),"Check Master List"))
+E259: =IF(OR($A259="",$B259="",$C259="",$D259=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A259&"|"&$B259&"|"&$C259&"|"&$D259,MASTERFLAT_KEY,0)),"Check Master List"))
+E260: =IF(OR($A260="",$B260="",$C260="",$D260=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A260&"|"&$B260&"|"&$C260&"|"&$D260,MASTERFLAT_KEY,0)),"Check Master List"))
+E261: =IF(OR($A261="",$B261="",$C261="",$D261=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A261&"|"&$B261&"|"&$C261&"|"&$D261,MASTERFLAT_KEY,0)),"Check Master List"))
+E262: =IF(OR($A262="",$B262="",$C262="",$D262=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A262&"|"&$B262&"|"&$C262&"|"&$D262,MASTERFLAT_KEY,0)),"Check Master List"))
+E263: =IF(OR($A263="",$B263="",$C263="",$D263=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A263&"|"&$B263&"|"&$C263&"|"&$D263,MASTERFLAT_KEY,0)),"Check Master List"))
+E264: =IF(OR($A264="",$B264="",$C264="",$D264=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A264&"|"&$B264&"|"&$C264&"|"&$D264,MASTERFLAT_KEY,0)),"Check Master List"))
+E265: =IF(OR($A265="",$B265="",$C265="",$D265=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A265&"|"&$B265&"|"&$C265&"|"&$D265,MASTERFLAT_KEY,0)),"Check Master List"))
+E266: =IF(OR($A266="",$B266="",$C266="",$D266=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A266&"|"&$B266&"|"&$C266&"|"&$D266,MASTERFLAT_KEY,0)),"Check Master List"))
+E267: =IF(OR($A267="",$B267="",$C267="",$D267=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A267&"|"&$B267&"|"&$C267&"|"&$D267,MASTERFLAT_KEY,0)),"Check Master List"))
+E268: =IF(OR($A268="",$B268="",$C268="",$D268=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A268&"|"&$B268&"|"&$C268&"|"&$D268,MASTERFLAT_KEY,0)),"Check Master List"))
+E269: =IF(OR($A269="",$B269="",$C269="",$D269=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A269&"|"&$B269&"|"&$C269&"|"&$D269,MASTERFLAT_KEY,0)),"Check Master List"))
+E270: =IF(OR($A270="",$B270="",$C270="",$D270=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A270&"|"&$B270&"|"&$C270&"|"&$D270,MASTERFLAT_KEY,0)),"Check Master List"))
+E271: =IF(OR($A271="",$B271="",$C271="",$D271=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A271&"|"&$B271&"|"&$C271&"|"&$D271,MASTERFLAT_KEY,0)),"Check Master List"))
+E272: =IF(OR($A272="",$B272="",$C272="",$D272=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A272&"|"&$B272&"|"&$C272&"|"&$D272,MASTERFLAT_KEY,0)),"Check Master List"))
+E273: =IF(OR($A273="",$B273="",$C273="",$D273=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A273&"|"&$B273&"|"&$C273&"|"&$D273,MASTERFLAT_KEY,0)),"Check Master List"))
+E274: =IF(OR($A274="",$B274="",$C274="",$D274=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A274&"|"&$B274&"|"&$C274&"|"&$D274,MASTERFLAT_KEY,0)),"Check Master List"))
+E275: =IF(OR($A275="",$B275="",$C275="",$D275=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A275&"|"&$B275&"|"&$C275&"|"&$D275,MASTERFLAT_KEY,0)),"Check Master List"))
+E276: =IF(OR($A276="",$B276="",$C276="",$D276=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A276&"|"&$B276&"|"&$C276&"|"&$D276,MASTERFLAT_KEY,0)),"Check Master List"))
+E277: =IF(OR($A277="",$B277="",$C277="",$D277=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A277&"|"&$B277&"|"&$C277&"|"&$D277,MASTERFLAT_KEY,0)),"Check Master List"))
+E278: =IF(OR($A278="",$B278="",$C278="",$D278=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A278&"|"&$B278&"|"&$C278&"|"&$D278,MASTERFLAT_KEY,0)),"Check Master List"))
+E279: =IF(OR($A279="",$B279="",$C279="",$D279=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A279&"|"&$B279&"|"&$C279&"|"&$D279,MASTERFLAT_KEY,0)),"Check Master List"))
+E280: =IF(OR($A280="",$B280="",$C280="",$D280=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A280&"|"&$B280&"|"&$C280&"|"&$D280,MASTERFLAT_KEY,0)),"Check Master List"))
+E281: =IF(OR($A281="",$B281="",$C281="",$D281=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A281&"|"&$B281&"|"&$C281&"|"&$D281,MASTERFLAT_KEY,0)),"Check Master List"))
+E282: =IF(OR($A282="",$B282="",$C282="",$D282=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A282&"|"&$B282&"|"&$C282&"|"&$D282,MASTERFLAT_KEY,0)),"Check Master List"))
+E283: =IF(OR($A283="",$B283="",$C283="",$D283=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A283&"|"&$B283&"|"&$C283&"|"&$D283,MASTERFLAT_KEY,0)),"Check Master List"))
+E284: =IF(OR($A284="",$B284="",$C284="",$D284=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A284&"|"&$B284&"|"&$C284&"|"&$D284,MASTERFLAT_KEY,0)),"Check Master List"))
+E285: =IF(OR($A285="",$B285="",$C285="",$D285=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A285&"|"&$B285&"|"&$C285&"|"&$D285,MASTERFLAT_KEY,0)),"Check Master List"))
+E286: =IF(OR($A286="",$B286="",$C286="",$D286=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A286&"|"&$B286&"|"&$C286&"|"&$D286,MASTERFLAT_KEY,0)),"Check Master List"))
+E287: =IF(OR($A287="",$B287="",$C287="",$D287=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A287&"|"&$B287&"|"&$C287&"|"&$D287,MASTERFLAT_KEY,0)),"Check Master List"))
+E288: =IF(OR($A288="",$B288="",$C288="",$D288=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A288&"|"&$B288&"|"&$C288&"|"&$D288,MASTERFLAT_KEY,0)),"Check Master List"))
+E289: =IF(OR($A289="",$B289="",$C289="",$D289=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A289&"|"&$B289&"|"&$C289&"|"&$D289,MASTERFLAT_KEY,0)),"Check Master List"))
+E290: =IF(OR($A290="",$B290="",$C290="",$D290=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A290&"|"&$B290&"|"&$C290&"|"&$D290,MASTERFLAT_KEY,0)),"Check Master List"))
+E291: =IF(OR($A291="",$B291="",$C291="",$D291=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A291&"|"&$B291&"|"&$C291&"|"&$D291,MASTERFLAT_KEY,0)),"Check Master List"))
+E292: =IF(OR($A292="",$B292="",$C292="",$D292=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A292&"|"&$B292&"|"&$C292&"|"&$D292,MASTERFLAT_KEY,0)),"Check Master List"))
+E293: =IF(OR($A293="",$B293="",$C293="",$D293=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A293&"|"&$B293&"|"&$C293&"|"&$D293,MASTERFLAT_KEY,0)),"Check Master List"))
+E294: =IF(OR($A294="",$B294="",$C294="",$D294=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A294&"|"&$B294&"|"&$C294&"|"&$D294,MASTERFLAT_KEY,0)),"Check Master List"))
+E295: =IF(OR($A295="",$B295="",$C295="",$D295=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A295&"|"&$B295&"|"&$C295&"|"&$D295,MASTERFLAT_KEY,0)),"Check Master List"))
+E296: =IF(OR($A296="",$B296="",$C296="",$D296=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A296&"|"&$B296&"|"&$C296&"|"&$D296,MASTERFLAT_KEY,0)),"Check Master List"))
+E297: =IF(OR($A297="",$B297="",$C297="",$D297=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A297&"|"&$B297&"|"&$C297&"|"&$D297,MASTERFLAT_KEY,0)),"Check Master List"))
+E298: =IF(OR($A298="",$B298="",$C298="",$D298=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A298&"|"&$B298&"|"&$C298&"|"&$D298,MASTERFLAT_KEY,0)),"Check Master List"))
+E299: =IF(OR($A299="",$B299="",$C299="",$D299=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A299&"|"&$B299&"|"&$C299&"|"&$D299,MASTERFLAT_KEY,0)),"Check Master List"))
+E300: =IF(OR($A300="",$B300="",$C300="",$D300=""),"",IFERROR(INDEX(MASTERFLAT_PRICE,MATCH($A300&"|"&$B300&"|"&$C300&"|"&$D300,MASTERFLAT_KEY,0)),"Check Master List"))
