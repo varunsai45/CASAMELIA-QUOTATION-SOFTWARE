@@ -18,7 +18,7 @@ from reportlab.platypus import (
 )
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from .config import DATA
+from .config import DATA, ROOT
 from .calculations import indian, dec
 
 
@@ -29,8 +29,12 @@ def fonts():
             "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
             "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
         ),
+        (
+            ROOT / "assets/fonts/DejaVuSans.ttf",
+            ROOT / "assets/fonts/DejaVuSans-Bold.ttf",
+        ),
     ]:
-        if Path(normal).exists():
+        if Path(normal).exists() and Path(bold).exists():
             pdfmetrics.registerFont(TTFont("Casa", normal))
             pdfmetrics.registerFont(TTFont("CasaBold", bold))
             pdfmetrics.registerFontFamily(
@@ -218,6 +222,9 @@ def generate_pdf(payload):
                     ("BOTTOMPADDING", (0, 0), (-1, -1), 2),
                     ("LEFTPADDING", (0, 0), (-1, -1), 3),
                     ("RIGHTPADDING", (0, 0), (-1, -1), 3),
+                    # Keep measurement labels intact with bundled Linux fonts.
+                    ("LEFTPADDING", (3, 1), (4, 1), 1),
+                    ("RIGHTPADDING", (3, 1), (4, 1), 1),
                 ]
             )
         )

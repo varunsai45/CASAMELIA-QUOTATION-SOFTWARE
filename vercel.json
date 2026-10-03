@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "fastapi",
+  "buildCommand": "python -m backend.app.cloud_build",
+  "functions": {
+    "app.py": {
+      "maxDuration": 60,
+      "excludeFiles": "{frontend/**,docs/**,scripts/**,tmp/**,output/**,.venv/**,.git/**,backend/tests/**,backend/data/*.xlsx,backend/data/*.pdf,backend/data/*.db*,*.zip}"
+    }
+  }
+}

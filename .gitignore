@@ -20,3 +20,5 @@ tmp/
 !.env.example
 !**/.env.example
 frontend/public/pdf.worker.min.mjs
+.vercel/
+frontend/.vercel/

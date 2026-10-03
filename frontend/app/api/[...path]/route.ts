@@ -1,5 +1,6 @@
 import { NextRequest } from "next/server";
 export const dynamic = "force-dynamic";
+export const maxDuration = 60;
 const allowed = new Set([
   "auth",
   "master-list",
@@ -22,12 +23,25 @@ async function forward(
   const { path } = await params;
   if (!allowed.has(path[0]) || path.some((p) => p === "." || p === ".."))
     return Response.json({ detail: "Route not found." }, { status: 404 });
-  const base = process.env.API_URL || "http://127.0.0.1:18080";
+  const configuredBase = process.env.API_URL;
+  if (process.env.VERCEL && !configuredBase?.startsWith("https://"))
+    return Response.json(
+      { detail: "The hosted quotation service needs configuration. Contact Admin." },
+      { status: 503 },
+    );
+  const base = (configuredBase || "http://127.0.0.1:18080").replace(/\/$/, "");
   const headers = new Headers();
   for (const k of ["content-type", "cookie", "x-casa-request", "origin"]) {
     const value = request.headers.get(k);
     if (value) headers.set(k, value);
   }
+  // Optional server-only secret for a backend protected by Vercel. Application
+  // login and role checks still run; this value is never returned to browsers.
+  if (process.env.API_DEPLOYMENT_BYPASS_SECRET)
+    headers.set(
+      "x-vercel-protection-bypass",
+      process.env.API_DEPLOYMENT_BYPASS_SECRET,
+    );
   const body = ["GET", "HEAD"].includes(request.method)
     ? undefined
     : await request.arrayBuffer();

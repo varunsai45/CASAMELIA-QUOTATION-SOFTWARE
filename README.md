@@ -2,6 +2,14 @@
 
 Functional Next.js + React + TypeScript frontend and FastAPI backend, built from the original Casamelia workbook. Runs locally with SQLite; uses PostgreSQL for server deployment. No Excel application is required for daily work.
 
+## Website access for the team
+
+Once hosted, staff only open the website link and log in. No installation or
+commands are required on their phones or computers. Follow the one-time
+[Vercel hosting guide](docs/VERCEL-DEPLOYMENT.md) to connect the two application
+projects to managed PostgreSQL. Hosting configuration is included; a live
+deployment still requires a Vercel account and cloud database.
+
 ## Quick start on this Windows computer
 
 The project is at `C:\Users\varun\casamelia-quotation`.

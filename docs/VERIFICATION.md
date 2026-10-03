@@ -54,3 +54,22 @@ Final combined browser suite: **14 passed** (including all nine viewport tests a
 - Manifest, icon availability and service-worker registration were checked at every test viewport. Native OS home-screen prompts were not manually exercised; browser installation support depends on HTTPS/localhost and the browser. No business data is cached offline.
 - UI review: 30 files, zero errors, zero warnings, 72 informational token suggestions. Existing Casamelia branding and A4 generation are preserved.
 - Two initial phone-test locator mistakes were corrected to match the existing accessible control names; the completed phone workflow passed.
+
+## Vercel deployment preparation
+
+- **29 backend tests passed**: the existing 19 tests plus managed PostgreSQL URL
+  normalization, production configuration guards, prevention of preview database
+  initialization, serialized cloud setup using a direct connection, lock release
+  after setup failure and actual A4 PDF generation using only bundled fonts.
+- Frontend production build and TypeScript passed after server-only API hosting
+  configuration, proxy timeout and optional deployment-protection forwarding.
+- Bundled DejaVu font archive was verified against the upstream SHA-256; original
+  fonts and redistribution license are included. The rendered cloud-font PDF was
+  visually checked; measurement label padding was adjusted to keep Length intact.
+- Root FastAPI and frontend Next.js Vercel configuration, cloud database build
+  initialization, environment examples and browser-based hosting instructions are
+  included. Runtime dependencies omit development/testing PDF inspection tools.
+- No hosted PostgreSQL or Vercel deployment has been exercised: hosting account
+  access and database provisioning are still required. Mocked migration-lock tests
+  verify orchestration, not a real PostgreSQL migration. Local business data was
+  not modified or migrated to the cloud.

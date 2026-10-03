@@ -1,5 +1,7 @@
 from sqlalchemy import create_engine, event
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy.pool import NullPool
+import os
 from .config import DATABASE_URL
 
 engine = create_engine(
@@ -10,6 +12,9 @@ engine = create_engine(
         else {}
     ),
     pool_pre_ping=True,
+    # Managed pooled PostgreSQL handles connection reuse. Do not multiply an
+    # application-side pool across Vercel's independently scaled instances.
+    **({"poolclass": NullPool} if os.getenv("VERCEL") else {}),
 )
 if DATABASE_URL.startswith("sqlite"):
 

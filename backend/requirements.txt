@@ -1,12 +1,4 @@
-fastapi==0.142.2
-uvicorn==0.54.0
-sqlalchemy==2.1.1
-psycopg[binary]==3.3.6
-alembic==1.20.0
-reportlab==5.0.1
-openpyxl==3.1.5
-bcrypt==5.0.0
-pillow==12.3.0
+-r requirements-runtime.txt
 pytest==9.1.1
 httpx==0.28.1
 pymupdf==1.28.2
