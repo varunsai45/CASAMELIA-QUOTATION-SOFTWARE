@@ -17,6 +17,7 @@ import { api } from "@/lib/api";
 import DialogAccessibility from "./DialogAccessibility";
 import ResponsiveTables from "./ResponsiveTables";
 import InstallApp from "./InstallApp";
+import BrandLogo from "./BrandLogo";
 export default function Shell({
   children,
   adminOnly = false,
@@ -99,7 +100,7 @@ export default function Shell({
           ×
         </button>
         <Link href="/" className="brand">
-          <img src="/api/branding/logo" alt="Casamelia International" />
+          <BrandLogo />
           <span>QUOTATION SOFTWARE</span>
         </Link>
         <div className="nav-caption">WORKSPACE</div>

@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { api } from "@/lib/api";
+import BrandLogo from "@/components/BrandLogo";
 export default function Login() {
   const router = useRouter();
   const [error, setError] = useState("");
@@ -9,7 +10,7 @@ export default function Login() {
   return (
     <div className="login-page">
       <div className="login-brand">
-        <img src="/api/branding/logo" alt="Casamelia International" />
+        <BrandLogo />
         <p>QUOTATION SOFTWARE</p>
         <div className="login-note">
           A considered approach
