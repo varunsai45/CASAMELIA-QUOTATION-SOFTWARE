@@ -13,6 +13,76 @@ from backend.app import cloud_build
 from .test_workflow import env, login, product, data, H
 
 
+def vercel_import_environment():
+    # A deliberately unreachable test database: import/startup and the root
+    # route must not connect to it or create tables during a serverless cold start.
+    return {
+        **os.environ,
+        "VERCEL": "1",
+        "VERCEL_ENV": "production",
+        "APP_ENV": "production",
+        "DATABASE_URL": "postgresql://user:unused@127.0.0.1:1/casa?connect_timeout=1",
+        "ALLOWED_ORIGINS": "https://web.example.com",
+        "SESSION_HOURS": "8",
+        "CASA_INITIALIZE_DATABASE": "false",
+    }
+
+
+@pytest.mark.parametrize("missing", ["APP_ENV", "DATABASE_URL", "ALLOWED_ORIGINS"])
+def test_cloud_build_detects_missing_startup_variables_without_initialization(missing):
+    settings = vercel_import_environment()
+    settings.pop(missing)
+    result = subprocess.run(
+        [sys.executable, "-m", "backend.app.cloud_build"],
+        env=settings,
+        capture_output=True,
+        text=True,
+        timeout=20,
+    )
+    assert result.returncode != 0
+    assert missing in result.stderr
+    assert "RuntimeError" in result.stderr
+    assert "Database initialization disabled" not in result.stdout
+
+
+def test_real_vercel_entrypoint_starts_and_serves_root():
+    settings = vercel_import_environment()
+    build = subprocess.run(
+        [sys.executable, "-m", "backend.app.cloud_build"],
+        env=settings,
+        capture_output=True,
+        text=True,
+        timeout=20,
+    )
+    assert build.returncode == 0, build.stderr
+    assert "backend imports validated" in build.stdout
+    result = subprocess.run(
+        [
+            sys.executable,
+            "-c",
+            """
+from app import app
+from backend.app.main import app as backend_app
+from fastapi.testclient import TestClient
+assert app is backend_app
+with TestClient(app) as client:
+    response = client.get('/')
+    assert response.status_code == 200, response.text
+    assert response.json()['service'] == 'CASAMELIA QUOTATION SOFTWARE'
+    assert response.json()['health'] == '/health'
+    for path in ['/auth/me', '/quotations', '/areas']:
+        assert client.get(path).status_code == 401, path
+print('Real FastAPI lifecycle, root HTTP 200 and protected routes verified.')
+""",
+        ],
+        env=settings,
+        capture_output=True,
+        text=True,
+        timeout=20,
+    )
+    assert result.returncode == 0, result.stderr
+
+
 @pytest.mark.parametrize(
     "scheme", ["postgres://", "postgresql://", "postgresql+psycopg://"]
 )

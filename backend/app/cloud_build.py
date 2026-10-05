@@ -3,9 +3,25 @@
 import os
 import subprocess
 import sys
+from pathlib import Path
+from runpy import run_path
+
+
+def validate_entrypoint():
+    """Exercise the real Vercel import before publishing a broken function."""
+    from fastapi import FastAPI
+
+    # Load the exact file configured in vercel.json. A name-only import can
+    # resolve backend/app instead when a tool adds backend/ to sys.path.
+    entrypoint = Path(__file__).resolve().parents[2] / "app.py"
+    application = run_path(str(entrypoint))["app"]
+    if not isinstance(application, FastAPI):
+        raise RuntimeError("app.py must export the existing FastAPI application.")
+    print("Vercel app.py entrypoint and backend imports validated.")
 
 
 def main():
+    validate_entrypoint()
     if os.getenv("CASA_INITIALIZE_DATABASE") != "true":
         print("Database initialization disabled. Existing database will be used.")
         return

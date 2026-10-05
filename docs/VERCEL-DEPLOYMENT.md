@@ -111,8 +111,9 @@ redeploy the API. Multiple permitted HTTPS origins are comma-separated.
 
 ## 5. Verify before sharing the website
 
-1. Check that both production deployments show **Ready**. The API `/health`
-   endpoint checks the service process; successful login confirms database access.
+1. Check that both production deployments show **Ready**. The API `/` returns
+   service information. `/health` checks database connectivity; successful login
+   additionally verifies that user tables and credentials are initialized.
 2. Log into the website as Admin and Sales using the hosting passwords.
 3. Confirm actual catalogue data and unresolved conflicts are present.
 4. Create a quotation, save a draft, reopen it and generate a version.
@@ -127,6 +128,29 @@ Then share **only the web project URL** with staff. They never need the API,
 database credentials, source files or hosting dashboard access.
 
 ## Preview deployments and limits
+
+The backend build always imports the actual root `app.py`, including when
+CASA_INITIALIZE_DATABASE is disabled. Missing startup configuration now fails
+the build with its underlying exception before publishing a broken function.
+
+If logs say `could not import "app.py"`, expand the traceback to its final line.
+The root entrypoint exports `backend.app.main.app`; it is not a separate app.
+Do not change the API Root Directory from `./` or point it at the frontend.
+
+Set these in the API project's **Production** environment, then redeploy:
+
+- `APP_ENV=production`
+- `DATABASE_URL`: actual PostgreSQL SSL connection string
+- `ALLOWED_ORIGINS`: actual HTTPS frontend origin
+
+Missing APP_ENV, an absent/invalid PostgreSQL URL or missing/non-HTTPS origins
+raise explicit RuntimeErrors during startup. `SESSION_HOURS`, if provided, must
+be an integer. Initial database setup also needs the initialization variables
+listed above. Never substitute a sample connection string for real credentials.
+
+An HTTP 200 at the backend `/` confirms the real application starts; it does not
+claim the database is ready. The Next.js website is the separate frontend
+project. Use `/health` and login to check database-backed operation.
 
 - Do not attach the production database to development or preview deployments.
   Production variables above are scoped only to Production. A preview API needs

@@ -168,6 +168,16 @@ def validate_customer(db, data, user):
             raise HTTPException(404, "Customer not found.")
 
 
+@app.get("/")
+def service_info():
+    """Liveness endpoint; /health separately verifies database connectivity."""
+    return {
+        "service": app.title,
+        "status": "running",
+        "health": "/health",
+    }
+
+
 @app.get("/health")
 def health(db=Depends(get_db)):
     db.execute(select(1))

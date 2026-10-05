@@ -73,3 +73,25 @@ Final combined browser suite: **14 passed** (including all nine viewport tests a
   access and database provisioning are still required. Mocked migration-lock tests
   verify orchestration, not a real PostgreSQL migration. Local business data was
   not modified or migrated to the cloud.
+
+## Vercel import/startup investigation (5 October 2026)
+
+- Root `app.py` exports `backend.app.main.app`, the existing FastAPI instance.
+  Root `vercel.json` selects that file. Local import inspection found no missing
+  runtime packages or broken backend relative imports with valid configuration.
+- Reproduced explicit import-time RuntimeErrors when APP_ENV, DATABASE_URL or
+  ALLOWED_ORIGINS is absent. The supplied online log excerpt does not contain
+  its final exception, so the exact hosted failure is still unconfirmed.
+- The build now checks the real root file even when database initialization is
+  disabled. It loads by filename to avoid confusing it with backend/app.
+- The existing app now serves service information at `/`; `/health` retains
+  its database connectivity check. No replacement FastAPI app was created.
+- **33 backend tests passed**, including the real entrypoint/lifespan under
+  Vercel-like production variables and missing-variable build failures.
+- Cloud build validation passed locally. A temporary Uvicorn `app:app` process
+  returned HTTP 200 at `/` and HTTP 401 at `/auth/me`. This used a deliberately
+  unreachable test database to verify startup/root do not require a connection;
+  it does not validate hosted PostgreSQL connectivity or migrations.
+- Live Vercel logs and the deployed URL are still required for hosted diagnosis
+  and acceptance testing. No deployment secrets or sample database credentials
+  were added to application configuration.
